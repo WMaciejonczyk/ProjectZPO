@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10">
+    <Button text="Show Storage" onAction="#showStorageDialog"/>
+    <TableView fx:id="table">
+        <columns>
+            <TableColumn text="Name" fx:id="colName"/>
+            <TableColumn text="Cost" fx:id="colCost"/>
+            <TableColumn text="Amount" fx:id="colAmount"/>
+        </columns>
+    </TableView>
+</VBox>
