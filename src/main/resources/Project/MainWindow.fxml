@@ -16,6 +16,12 @@
     <Button fx:id="showAddMedicineMenu" text="Add medicine" layoutX="45" layoutY="160"
             onAction="#handleShowFieldsMedicine"/>
 
-    <Button fx:id="showStorageMenu" text="Show storage" layoutX="105" layoutY="220" alignment="CENTER"
+    <Button fx:id="deleteSupplyMenu" text="Delete supply" layoutX="160" layoutY="60"
+            onAction="#handleShowFieldsSupplyDeletion"/>
+
+    <Button fx:id="updateSupplyMenu" text="Update supply" layoutX="160" layoutY="110"
+            onAction="#handleShowFieldsSupplyUpdate"/>
+
+    <Button fx:id="showStorageMenu" text="Show storage" layoutX="160" layoutY="160"
             onAction="#showStorage"/>
 </Pane>

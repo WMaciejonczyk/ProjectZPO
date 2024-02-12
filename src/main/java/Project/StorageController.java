@@ -9,6 +9,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 /**
@@ -29,6 +30,9 @@ public class StorageController implements Initializable {
     private TableColumn<Supply, Double> colCost;
 
     @FXML
+    private TableColumn<Supply, LocalDate> colDate;
+
+    @FXML
     private Button exitStorageButton;
 
     /**
@@ -42,7 +46,9 @@ public class StorageController implements Initializable {
         colName.setCellValueFactory(new PropertyValueFactory<>("name"));
         colAmount.setCellValueFactory(new PropertyValueFactory<>("amount"));
         colCost.setCellValueFactory(new PropertyValueFactory<>("cost"));
+        colDate.setCellValueFactory(new PropertyValueFactory<>("date"));
         tableView.setItems(MainApp.getTvObservableList());
+        tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
     }
 
     /**

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+
+<Pane xmlns:fx="http://javafx.com/fxml" fx:controller="Project.SupplyUpdateController">
+<padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
+    <Label text="Supply key:" layoutX="60" layoutY="15"/>
+    <TextField fx:id="textFieldKey" promptText="Enter supply key" layoutX="25" layoutY="40"/>
+    <ComboBox fx:id="selectValue"  promptText="Select parameter" layoutX="15" layoutY="80">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Amount"/>
+                <String fx:value="Cost"/>
+                <String fx:value="Termination/service date"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <TextField fx:id="textFieldNumber" promptText="Enter update data" layoutX="25" layoutY="120"/>
+    <Button fx:id="submitUpdate" text="Update" layoutX="60" layoutY="160" onAction="#updateSupply"/>
+</Pane>

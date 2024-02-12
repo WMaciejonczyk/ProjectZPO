@@ -28,7 +28,7 @@ public class MainApp extends Application {
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("MainWindow.fxml"));
         Parent root = loader.load();
 
-        Scene scene = new Scene(root, 300, 300);
+        Scene scene = new Scene(root, 300, 250);
         stage.setTitle("Main Menu");
         stage.setScene(scene);
         stage.show();

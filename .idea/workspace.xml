@@ -4,44 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="725b986c-e3c2-4b6f-bfa9-fb80e4f3abfc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/EquipmentApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/EquipmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/InvalidInputException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MaterialApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MaterialController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MedicineApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MedicineController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/StorageApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/StorageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/MainWindow.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/MedicineWindow.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/StorageWindow.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/EquipmentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MaterialsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MedicineTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StorageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+    <list default="true" id="725b986c-e3c2-4b6f-bfa9-fb80e4f3abfc" name="Changes" comment="Updating project - storage">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/SupplyDeletionApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/SupplyDeletionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/SupplyUpdateApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/SupplyUpdateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/DeletionWindow.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/UpdateWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Equipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Materials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Materials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Medicine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Specialists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Specialists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Storage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Supply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Supply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/ZPOApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/ZPOController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectzpo/EquipmentWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/EquipmentWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectzpo/MaterialWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectzpo/MedicineWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/MaterialWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectzpo/StorageWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectzpo/ZPO-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/StorageApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/StorageApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/StorageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/StorageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/MainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/StorageWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/StorageWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -84,37 +60,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.EquipmentApp.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainApp.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MaterialApp.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MedicineApp.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StorageApp.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ZPOApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EquipmentTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.MaterialsTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.MedicineTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;JUnit.StorageTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/macie/IdeaProjects/ProjectZPO/src/main/resources/com/example/projectzpo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EquipmentApp.executor": "Run",
+    "Application.HelloApplication.executor": "Run",
+    "Application.MainApp.executor": "Run",
+    "Application.MaterialApp.executor": "Run",
+    "Application.MedicineApp.executor": "Run",
+    "Application.StorageApp.executor": "Run",
+    "Application.SupplyDeletionApp.executor": "Run",
+    "Application.SupplyUpdateApp.executor": "Run",
+    "Application.ZPOApplication.executor": "Run",
+    "JUnit.EquipmentTest.executor": "Coverage",
+    "JUnit.MaterialsTest.executor": "Coverage",
+    "JUnit.MedicineTest.executor": "Coverage",
+    "JUnit.StorageTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/macie/IdeaProjects/ProjectZPO/src/main/resources/com/example/projectzpo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\macie\IdeaProjects\ProjectZPO\src\main\resources\com\example\projectzpo" />
@@ -151,12 +129,25 @@
       <workItem from="1707395261739" duration="8904000" />
       <workItem from="1707585897638" duration="26840000" />
       <workItem from="1707689803089" duration="54000" />
-      <workItem from="1707749341168" duration="4505000" />
+      <workItem from="1707749341168" duration="14346000" />
     </task>
+    <task id="LOCAL-00001" summary="Updating project - storage">
+      <option name="closed" value="true" />
+      <created>1707754821682</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707754821682</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updating project - storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating project - storage" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Storage_java$StorageTest.ic" NAME="StorageTest Coverage Results" MODIFIED="1707689414784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

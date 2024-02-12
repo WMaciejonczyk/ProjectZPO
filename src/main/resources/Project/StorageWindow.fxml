@@ -4,16 +4,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane prefHeight="458.0" prefWidth="302.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.StorageController">
+<Pane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.StorageController">
     <padding><Insets bottom="15" left="25" right="25" top="15" /></padding>
 
-    <Button fx:id="exitStorageButton" layoutX="132.0" layoutY="419.0" onAction="#exitStorage" text="Exit" />
+    <Button fx:id="exitStorageButton" layoutX="205.0" layoutY="419.0" onAction="#exitStorage" text="Exit" />
     <TableView fx:id="tableView" layoutX="26.0" layoutY="14.0">
         <columns>
-            <TableColumn fx:id="colName" prefWidth="78.33331680297852" text="Name" />
-            <TableColumn fx:id="colAmount" prefWidth="82.33336639404297" text="Amount"/>
-            <TableColumn fx:id="colCost" prefWidth="78.33331680297852" text="Cost"/>
+            <TableColumn fx:id="colName" maxWidth="100.0" prefWidth="80" text="Name" />
+            <TableColumn fx:id="colAmount" maxWidth="80.0" prefWidth="80" text="Amount" />
+            <TableColumn fx:id="colCost" maxWidth="80.0" prefWidth="80" text="Cost" />
+            <TableColumn fx:id="colDate" maxWidth="160" prefWidth="160.0" text="Termination/service date" />
         </columns>
     </TableView>
-
 </Pane>

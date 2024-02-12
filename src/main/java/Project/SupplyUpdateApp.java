@@ -8,10 +8,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/**
- * The StorageApp class represents the application for displaying storage contents.
- */
-public class StorageApp extends Application {
+public class SupplyUpdateApp extends Application {
+
+    /**
+     * The main entry point for the application.
+     *
+     * @param args The command-line arguments.
+     */
+    public static void main(String[] args) {
+        launch();
+    }
 
     /**
      * Starts the application.
@@ -21,20 +27,12 @@ public class StorageApp extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("StorageWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("UpdateWindow.fxml"));
         Parent root = loader.load();
-        Scene scene = new Scene(root, 450, 450);
-        stage.setTitle("Storage Contents");
+
+        Scene scene = new Scene(root, 200, 200);
+        stage.setTitle("Supply Update Menu");
         stage.setScene(scene);
         stage.show();
-    }
-
-    /**
-     * The main entry point for the application.
-     *
-     * @param args The command-line arguments.
-     */
-    public static void main(String[] args) {
-        launch();
     }
 }

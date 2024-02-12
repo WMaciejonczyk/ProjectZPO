@@ -23,6 +23,12 @@ public class MainController {
     @FXML
     Button showStorageMenu;
 
+    @FXML
+    Button deleteSupplyMenu;
+
+    @FXML
+    Button updateSupplyMenu;
+
     /**
      * Handles the action event for showing the fields to add material.
      *
@@ -130,4 +136,59 @@ public class MainController {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Handles the action event for showing the fields for supply deletion.
+     *
+     * @param event The action event triggered by clicking the "Delete supply" button.
+     */
+    @FXML
+    protected void handleShowFieldsSupplyDeletion(ActionEvent event) {
+        Button closeButton = (Button) event.getSource();
+        Stage stage = (Stage) closeButton.getScene().getWindow();
+        stage.close();
+        showFieldsSupplyDeletion(stage);
+    }
+
+    /**
+     * Show the fields to delete supply.
+     *
+     * @param stage The stage of the main menu.
+     */
+    protected void showFieldsSupplyDeletion(Stage stage) {
+        try {
+            SupplyDeletionApp supplyUpdateApp = new SupplyDeletionApp();
+            supplyUpdateApp.start(stage);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Handles the action event for showing the fields for supply update.
+     *
+     * @param event The action event triggered by clicking the "Update supply" button.
+     */
+    @FXML
+    protected void handleShowFieldsSupplyUpdate(ActionEvent event) {
+        Button closeButton = (Button) event.getSource();
+        Stage stage = (Stage) closeButton.getScene().getWindow();
+        stage.close();
+        showFieldsSupplyUpdate(stage);
+    }
+
+    /**
+     * Show the fields to update supply.
+     *
+     * @param stage The stage of the main menu.
+     */
+    protected void showFieldsSupplyUpdate(Stage stage) {
+        try {
+            SupplyUpdateApp supplyUpdateApp = new SupplyUpdateApp();
+            supplyUpdateApp.start(stage);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
