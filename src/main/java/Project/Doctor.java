@@ -1,3 +1,5 @@
+package Project;
+
 public class Doctor {
     public enum Speciality {
         CARDIOLOGY,

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.MedicineController">
+    <padding><Insets bottom="15" left="25" right="25" top="15" /></padding>
+    <Label layoutX="77.0" layoutY="30" text="Name:" />
+
+    <TextField fx:id="textFieldName" layoutX="120" layoutY="28" promptText="Enter item name" />
+
+    <Label layoutX="84.0" layoutY="70" text="Cost:" />
+
+    <TextField fx:id="textFieldCost" layoutX="120" layoutY="68" promptText="Enter cost" />
+
+    <Label layoutX="65.0" layoutY="110" text="Amount:" />
+
+    <TextField fx:id="textFieldAmount" layoutX="120" layoutY="108" promptText="Enter amount" />
+
+    <Label layoutX="57.0" layoutY="150" text="ATC code:" />
+
+    <TextField fx:id="textFieldATC" layoutX="120" layoutY="148" promptText="Enter ATC code" />
+
+    <Label layoutX="18.0" layoutY="190" text="Termination date:" />
+
+    <TextField fx:id="textFieldTerminationDate" layoutX="120" layoutY="188" promptText="Enter termination date" />
+
+    <Button fx:id="submitMedicine" layoutX="130.0" layoutY="230" onAction="#addMedicineToStorage" text="Submit" />
+</Pane>

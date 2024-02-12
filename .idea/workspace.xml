@@ -5,12 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="725b986c-e3c2-4b6f-bfa9-fb80e4f3abfc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/EquipmentApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/EquipmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/InvalidInputException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MaterialApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MaterialController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MedicineApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/MedicineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/StorageApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/StorageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/MainWindow.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/MedicineWindow.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/StorageWindow.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/EquipmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MaterialsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MedicineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StorageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Equipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Materials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Materials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Medicine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Specialists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Specialists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/Supply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Supply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/ZPOApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectzpo/ZPOController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectzpo/EquipmentWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/EquipmentWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectzpo/MaterialWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectzpo/MedicineWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/MaterialWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectzpo/StorageWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectzpo/ZPO-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\macie\IdeaProjects\ProjectZPO\htmlReport" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,25 +70,65 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2b2RYwtQCvLvlHtRGhbLEIGsuA6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EquipmentApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaterialApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MedicineApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StorageApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ZPOApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EquipmentTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.MaterialsTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.MedicineTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.StorageTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/macie/IdeaProjects/ProjectZPO/src/main/resources/com/example/projectzpo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\macie\IdeaProjects\ProjectZPO\src\main\resources\com\example\projectzpo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\macie\IdeaProjects\ProjectZPO\src\main\resources\Project" />
+      <recent name="C:\Users\macie\IdeaProjects\ProjectZPO\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Project" />
+      <recent name="" />
+      <recent name="com.example.projectzpo" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -56,10 +144,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705411242590</updated>
+      <workItem from="1705412257221" duration="756000" />
+      <workItem from="1705436409675" duration="57339000" />
+      <workItem from="1706016325365" duration="1021000" />
+      <workItem from="1706260248545" duration="3700000" />
+      <workItem from="1707395261739" duration="8904000" />
+      <workItem from="1707585897638" duration="26840000" />
+      <workItem from="1707689803089" duration="54000" />
+      <workItem from="1707749341168" duration="4505000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Storage_java$StorageTest.ic" NAME="StorageTest Coverage Results" MODIFIED="1707689414784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Storage_java$MedicineTest.ic" NAME="MedicineTest Coverage Results" MODIFIED="1707685470959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Storage_java$MaterialsTest.ic" NAME="MaterialsTest Coverage Results" MODIFIED="1707682892289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Storage_java$EquipmentTest.ic" NAME="EquipmentTest Coverage Results" MODIFIED="1707684428641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
