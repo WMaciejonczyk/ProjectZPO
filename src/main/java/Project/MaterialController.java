@@ -24,7 +24,7 @@ public class MaterialController {
     TextField textFieldAmount;
 
     @FXML
-    TextField textFieldTerminationDate;
+    TextField textFieldExpirationDate;
 
     @FXML
     Button submitMaterial;
@@ -38,19 +38,19 @@ public class MaterialController {
     @FXML
     protected void addMaterialToStorage(ActionEvent event) throws IOException {
         if (textFieldName.getText().isEmpty() || textFieldCost.getText().isEmpty() || textFieldAmount.getText().isEmpty()
-                || textFieldTerminationDate.getText().isEmpty()) {
+                || textFieldExpirationDate.getText().isEmpty()) {
             throw new InvalidInputException("Fields cannot be empty.");
         } else {
             String name = textFieldName.getText();
             double cost = Double.parseDouble(textFieldCost.getText());
             int amount = Integer.parseInt(textFieldAmount.getText());
-            LocalDate terminationDate = LocalDate.parse(textFieldTerminationDate.getText());
+            LocalDate terminationDate = LocalDate.parse(textFieldExpirationDate.getText());
             Materials material = new Materials(name, cost, amount, terminationDate);
             MainApp.getStorage().addSupply(material);
             MainApp.getTvObservableList().add(material);
-            textFieldName.setText("");
-            textFieldCost.setText("");
-            textFieldAmount.setText("");
+            textFieldName.setText(null);
+            textFieldCost.setText(null);
+            textFieldAmount.setText(null);
             Button closeButton = (Button) event.getSource();
             Stage stage = (Stage) closeButton.getScene().getWindow();
             stage.close();

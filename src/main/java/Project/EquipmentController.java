@@ -39,7 +39,7 @@ public class EquipmentController {
     protected void addEquipmentToStorage(ActionEvent event) throws IOException {
         if (textFieldName.getText().isEmpty() || textFieldCost.getText().isEmpty() || textFieldAmount.getText().isEmpty()
                 || textFieldServiceDate.getText().isEmpty()) {
-            throw new InvalidInputException("Fields cannot be empty.");
+            throw new InvalidInputException("Fields cannot be empty .");
         } else {
             String name = textFieldName.getText();
             double cost = Double.parseDouble(textFieldCost.getText());
@@ -48,9 +48,9 @@ public class EquipmentController {
             Equipment eq = new Equipment(name, cost, amount, serviceDate);
             MainApp.getStorage().addSupply(eq);
             MainApp.getTvObservableList().add(eq);
-            textFieldName.setText("");
-            textFieldCost.setText("");
-            textFieldAmount.setText("");
+            textFieldName.setText(null);
+            textFieldCost.setText(null);
+            textFieldAmount.setText(null);
             Button closeButton = (Button) event.getSource();
             Stage stage = (Stage) closeButton.getScene().getWindow();
             stage.close();

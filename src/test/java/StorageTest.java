@@ -109,7 +109,7 @@ public class StorageTest {
         Materials material = new Materials("Bandages", 10.0, 5, LocalDate.now().plusDays(10));
         storage.addSupply(material);
         LocalDate newDate = LocalDate.now().plusDays(20);
-        assertThrows(IllegalArgumentException.class, () -> storage.updateSupplyTerminationOrServiceDate(10, newDate));
+        assertThrows(IllegalArgumentException.class, () -> storage.updateSupplyExpirationOrServiceDate(10, newDate));
     }
 
 
@@ -118,7 +118,7 @@ public class StorageTest {
         Materials material = new Materials("Bandages", 10.0, 5, LocalDate.now().plusDays(10));
         storage.addSupply(material);
         LocalDate newDate = LocalDate.now().plusDays(20);
-        storage.updateSupplyTerminationOrServiceDate(1, newDate);
+        storage.updateSupplyExpirationOrServiceDate(1, newDate);
         assertEquals(newDate, material.getDate());
     }
 

@@ -20,7 +20,7 @@ public class Materials implements Supply {
     private String name;
     private double cost;
     private int amount;
-    private LocalDate terminationDate;
+    private LocalDate expirationDate;
     private Utility utility;
 
     /**
@@ -29,17 +29,17 @@ public class Materials implements Supply {
      * @param name            The name of the material.
      * @param cost            The cost of the material.
      * @param amount          The amount of the material.
-     * @param terminationDate The termination date of the material.
+     * @param expirationDate The expiration date of the material.
      * @throws IllegalArgumentException if any of the parameters are invalid (cost <= 0, amount <= 0, or name is empty).
      */
-    public Materials(String name, double cost, int amount, LocalDate terminationDate) {
+    public Materials(String name, double cost, int amount, LocalDate expirationDate) {
         if (cost <= 0 || amount <= 0 || name.isEmpty()) {
             throw new IllegalArgumentException("Incorrect parameters.");
         } else {
             this.name = name;
             this.cost = cost;
             this.amount = amount;
-            this.terminationDate = terminationDate;
+            this.expirationDate = expirationDate;
             setUtility(getName());
         }
     }
@@ -141,22 +141,22 @@ public class Materials implements Supply {
     }
 
     /**
-     * Gets the termination date of the material.
+     * Gets the expiration date of the material.
      *
-     * @return The termination date of the material.
+     * @return The expiration date of the material.
      */
     @Override
     public LocalDate getDate() {
-        return terminationDate;
+        return expirationDate;
     }
 
     /**
-     * Sets the termination date of the material.
+     * Sets the expiration date of the material.
      *
-     * @param terminationDate The termination date of the material.
+     * @param expirationDate The expiration date of the material.
      */
-    public void setDate(LocalDate terminationDate) {
-        this.terminationDate = terminationDate;
+    public void setDate(LocalDate expirationDate) {
+        this.expirationDate = expirationDate;
     }
 
     /**
@@ -165,11 +165,11 @@ public class Materials implements Supply {
     @Override
     public void displayInfo() {
         System.out.println("Name: " + getName() + "\n Purpose: " + getUtility().name() + "\n Cost: " + getCost() + "\n Amount: " + getAmount()
-                + "\n Termination date: " + getDate().toString());
+                + "\n Expiration date: " + getDate().toString());
     }
 
     /**
-     * Checks if the material is overdue based on its termination date.
+     * Checks if the material is overdue based on its expiration date.
      *
      * @return True if the material is overdue, false otherwise.
      */

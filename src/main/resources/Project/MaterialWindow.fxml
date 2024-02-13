@@ -22,9 +22,9 @@
 
     <TextField fx:id="textFieldAmount" promptText="Enter amount" layoutX="120" layoutY="108"/>
 
-    <Label text="Termination date:" layoutX="18" layoutY="150"/>
+    <Label text="Expiration date:" layoutX="28" layoutY="150"/>
 
-    <TextField fx:id="textFieldTerminationDate" promptText="Enter termination date" layoutX="120" layoutY="148"/>
+    <TextField fx:id="textFieldExpirationDate" promptText="Enter expiration date" layoutX="120" layoutY="148"/>
 
     <Button fx:id="submitMaterial" text="Submit" layoutX="120" layoutY="190"
 

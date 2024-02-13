@@ -22,9 +22,9 @@
 
     <TextField fx:id="textFieldATC" layoutX="120" layoutY="148" promptText="Enter ATC code" />
 
-    <Label layoutX="18.0" layoutY="190" text="Termination date:" />
+    <Label layoutX="28.0" layoutY="190" text="Expiration date:" />
 
-    <TextField fx:id="textFieldTerminationDate" layoutX="120" layoutY="188" promptText="Enter termination date" />
+    <TextField fx:id="textFieldExpirationDate" layoutX="120" layoutY="188" promptText="Enter expiration date" />
 
     <Button fx:id="submitMedicine" layoutX="130.0" layoutY="230" onAction="#addMedicineToStorage" text="Submit" />
 </Pane>

@@ -11,7 +11,7 @@ public class Medicine implements Supply {
     private String classificationATC;
     private double cost;
     private int amount;
-    private LocalDate terminationDate;
+    private LocalDate expirationDate;
 
     /**
      * Constructs a Medicine object with specified parameters.
@@ -20,10 +20,10 @@ public class Medicine implements Supply {
      * @param classificationATC The Anatomical Therapeutic Chemical (ATC) classification code of the medicine.
      * @param cost              The cost of the medicine.
      * @param amount            The amount of the medicine.
-     * @param terminationDate   The termination date of the medicine.
+     * @param expirationDate   The expiration date of the medicine.
      * @throws IllegalArgumentException if any of the parameters are invalid.
      */
-    public Medicine(String name, String classificationATC, double cost, int amount, LocalDate terminationDate) {
+    public Medicine(String name, String classificationATC, double cost, int amount, LocalDate expirationDate) {
         String[] stringArray = {"A", "B", "C", "D", "G", "H", "J", "L", "M", "N", "P", "R", "S", "V"};
         classificationATC = classificationATC.toUpperCase();
         if (classificationATC.length() != 7 || !Arrays.asList(stringArray).contains(Character.toString(classificationATC.charAt(0)))) {
@@ -39,7 +39,7 @@ public class Medicine implements Supply {
             this.classificationATC = classificationATC;
             this.cost = cost;
             this.amount = amount;
-            this.terminationDate = terminationDate;
+            this.expirationDate = expirationDate;
         }
     }
 
@@ -145,22 +145,22 @@ public class Medicine implements Supply {
     }
 
     /**
-     * Gets the termination date of the medicine.
+     * Gets the expiration date of the medicine.
      *
-     * @return The termination date of the medicine.
+     * @return The expiration date of the medicine.
      */
     @Override
     public LocalDate getDate() {
-        return terminationDate;
+        return expirationDate;
     }
 
     /**
-     * Sets the termination date of the medicine.
+     * Sets the expiration date of the medicine.
      *
-     * @param terminationDate The termination date of the medicine.
+     * @param expirationDate The expiration date of the medicine.
      */
-    public void setDate(LocalDate terminationDate) {
-        this.terminationDate = terminationDate;
+    public void setDate(LocalDate expirationDate) {
+        this.expirationDate = expirationDate;
     }
 
     /**
@@ -194,11 +194,11 @@ public class Medicine implements Supply {
     @Override
     public void displayInfo() {
         System.out.println("ATC: " + getClassificationATC() + "\n Name: " + getName() + "\n Group: " + getATCGroup()
-                + "\n Cost: " + getCost() + "\n Amount: " + getAmount() + "\n Termination date: " + getDate().toString());
+                + "\n Cost: " + getCost() + "\n Amount: " + getAmount() + "\n Expiration date: " + getDate().toString());
     }
 
     /**
-     * Checks if the medicine is expired based on its termination date.
+     * Checks if the medicine is expired based on its expiration date.
      *
      * @return True if the medicine is expired, false otherwise.
      */

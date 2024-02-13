@@ -27,7 +27,7 @@ public class MedicineController {
     TextField textFieldAmount;
 
     @FXML
-    TextField textFieldTerminationDate;
+    TextField textFieldExpirationDate;
 
     @FXML
     Button submitMedicine;
@@ -41,20 +41,20 @@ public class MedicineController {
     @FXML
     protected void addMedicineToStorage(ActionEvent event) throws IOException {
         if (textFieldName.getText().isEmpty() || textFieldATC.getText().isEmpty() || textFieldCost.getText().isEmpty()
-                || textFieldAmount.getText().isEmpty() || textFieldTerminationDate.getText().isEmpty()) {
+                || textFieldAmount.getText().isEmpty() || textFieldExpirationDate.getText().isEmpty()) {
             throw new InvalidInputException("Fields cannot be empty.");
         } else {
             String name = textFieldName.getText();
             String atc = textFieldATC.getText();
             double cost = Double.parseDouble(textFieldCost.getText());
             int amount = Integer.parseInt(textFieldAmount.getText());
-            LocalDate terminationDate = LocalDate.parse(textFieldTerminationDate.getText());
+            LocalDate terminationDate = LocalDate.parse(textFieldExpirationDate.getText());
             Medicine medicine = new Medicine(name, atc, cost, amount, terminationDate);
             MainApp.getStorage().addSupply(medicine);
             MainApp.getTvObservableList().add(medicine);
-            textFieldName.setText("");
-            textFieldCost.setText("");
-            textFieldAmount.setText("");
+            textFieldName.setText(null);
+            textFieldCost.setText(null);
+            textFieldAmount.setText(null);
             Button closeButton = (Button) event.getSource();
             Stage stage = (Stage) closeButton.getScene().getWindow();
             stage.close();

@@ -58,7 +58,7 @@ public class SupplyUpdateController {
             }
             else if (selectValue.getValue().equalsIgnoreCase("termination/service date")) {
                 LocalDate date = LocalDate.parse(textFieldNumber.getText());
-                MainApp.getStorage().updateSupplyTerminationOrServiceDate(key, date);
+                MainApp.getStorage().updateSupplyExpirationOrServiceDate(key, date);
                 Supply supplyAfter = MainApp.getStorage().getStorage().get(key);
                 MainApp.getTvObservableList().add(supplyAfter);
             }

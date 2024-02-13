@@ -88,13 +88,13 @@ public class Storage {
     }
 
     /**
-     * Updates the termination or service date of a supply item in the storage.
+     * Updates the expiration or service date of a supply item in the storage.
      *
      * @param key  The key of the supply item to update.
-     * @param date The new termination or service date of the supply item.
+     * @param date The new expiration or service date of the supply item.
      * @throws IllegalArgumentException if the key is incorrect.
      */
-    public void updateSupplyTerminationOrServiceDate(int key, LocalDate date) {
+    public void updateSupplyExpirationOrServiceDate(int key, LocalDate date) {
         if (getStorage().containsKey(key)) {
             getStorage().get(key).setDate(date);
         } else {

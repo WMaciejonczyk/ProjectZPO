@@ -4,20 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="725b986c-e3c2-4b6f-bfa9-fb80e4f3abfc" name="Changes" comment="Updating project - storage">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/SupplyDeletionApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/SupplyDeletionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/SupplyUpdateApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/SupplyUpdateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/DeletionWindow.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/UpdateWindow.fxml" afterDir="false" />
+    <list default="true" id="725b986c-e3c2-4b6f-bfa9-fb80e4f3abfc" name="Changes" comment="Updating project - adding/updating supplies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/EquipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/EquipmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Project/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/StorageApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/StorageApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/StorageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/StorageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/MainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/MaterialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/MaterialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/Materials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Materials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Medicine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/MedicineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/MedicineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/SupplyUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/SupplyUpdateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/MaterialWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/MaterialWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/MedicineWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/MedicineWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Project/StorageWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/StorageWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MaterialsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MaterialsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StorageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
     "Application.SupplyDeletionApp.executor": "Run",
     "Application.SupplyUpdateApp.executor": "Run",
     "Application.ZPOApplication.executor": "Run",
-    "JUnit.EquipmentTest.executor": "Coverage",
+    "JUnit.EquipmentTest.executor": "Run",
     "JUnit.MaterialsTest.executor": "Coverage",
     "JUnit.MedicineTest.executor": "Coverage",
     "JUnit.StorageTest.executor": "Run",
@@ -129,7 +130,10 @@
       <workItem from="1707395261739" duration="8904000" />
       <workItem from="1707585897638" duration="26840000" />
       <workItem from="1707689803089" duration="54000" />
-      <workItem from="1707749341168" duration="14346000" />
+      <workItem from="1707749341168" duration="14705000" />
+      <workItem from="1707816981066" duration="2746000" />
+      <workItem from="1707826492832" duration="48000" />
+      <workItem from="1707841479442" duration="3119000" />
     </task>
     <task id="LOCAL-00001" summary="Updating project - storage">
       <option name="closed" value="true" />
@@ -139,15 +143,47 @@
       <option name="project" value="LOCAL" />
       <updated>1707754821682</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updating project - adding/updating supplies">
+      <option name="closed" value="true" />
+      <created>1707775186556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707775186556</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updating project - storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating project - storage" />
+    <MESSAGE value="Updating project - adding/updating supplies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating project - adding/updating supplies" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Storage_java$StorageTest.ic" NAME="StorageTest Coverage Results" MODIFIED="1707689414784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

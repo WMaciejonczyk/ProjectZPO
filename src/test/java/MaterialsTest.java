@@ -116,7 +116,7 @@ public class MaterialsTest {
     public void testDisplayInfo() {
         Materials m = new Materials("Bandages", 10.0, 5, LocalDate.now().plusDays(10));
         LocalDate date = LocalDate.now().plusDays(10);
-        String info = "Name: Bandages\n Purpose: HEMORRHAGE_CONTROL\n Cost: 10.0\n Amount: 5\n Termination date: " + date;
+        String info = "Name: Bandages\n Purpose: HEMORRHAGE_CONTROL\n Cost: 10.0\n Amount: 5\n Expiration date: " + date;
         m.displayInfo();
         assertEquals(info, outputStreamCaptor.toString().trim());
     }

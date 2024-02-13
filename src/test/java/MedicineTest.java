@@ -100,7 +100,7 @@ public class MedicineTest {
     public void testDisplayInfo() {
         Medicine medicine = new Medicine("Paracetamol", "N02BE01", 5.0, 10, LocalDate.now().plusMonths(6));
         LocalDate date = LocalDate.now().plusMonths(6);
-        String info = "ATC: N02BE01\n Name: Paracetamol\n Group: Nervous system\n Cost: 5.0\n Amount: 10\n Termination date: " + date;
+        String info = "ATC: N02BE01\n Name: Paracetamol\n Group: Nervous system\n Cost: 5.0\n Amount: 10\n Expiration date: " + date;
         medicine.displayInfo();
         assertEquals(info, outputStreamCaptor.toString().trim());
     }

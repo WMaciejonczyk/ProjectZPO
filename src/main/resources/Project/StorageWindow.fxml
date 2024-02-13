@@ -13,7 +13,7 @@
             <TableColumn fx:id="colName" maxWidth="100.0" prefWidth="80" text="Name" />
             <TableColumn fx:id="colAmount" maxWidth="80.0" prefWidth="80" text="Amount" />
             <TableColumn fx:id="colCost" maxWidth="80.0" prefWidth="80" text="Cost" />
-            <TableColumn fx:id="colDate" maxWidth="160" prefWidth="160.0" text="Termination/service date" />
+            <TableColumn fx:id="colDate" maxWidth="160" prefWidth="160.0" text="Expiration/service date" />
         </columns>
     </TableView>
 </Pane>
