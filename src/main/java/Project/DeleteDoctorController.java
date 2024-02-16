@@ -1,5 +1,8 @@
 package Project;
 
+import Project.doctor.Doctor;
+import Project.exceptions.InvalidInputException;
+import Project.MainApp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -8,9 +11,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * The SupplyDeletionController class controls the interaction with the supply deletion window.
+ * The SupplyDeletionController class controls the interaction with the doctor deletion window.
  */
-public class SupplyDeletionController {
+public class DeleteDoctorController {
     @FXML
     TextField textFieldKey;
 
@@ -18,22 +21,22 @@ public class SupplyDeletionController {
     Button submitDeletion;
 
     /**
-     * Deletes the supply based on the provided key.
+     * Deletes the doctor based on the provided key.
      *
      * @param event The action event triggered by the delete button.
      * @throws IOException if an I/O exception occurs.
      * @throws InvalidInputException if any text field is empty.
      */
     @FXML
-    protected void deleteSupply(ActionEvent event) throws IOException {
+    protected void deleteDoctor(ActionEvent event) throws IOException {
         if (textFieldKey.getText().isEmpty()) {
             throw new InvalidInputException("Fields cannot be empty.");
         }
         else {
             int key = Integer.parseInt(textFieldKey.getText());
-            Supply supply = MainApp.getStorage().getStorage().get(key);
-            MainApp.getStorage().deleteSupply(key);
-            MainApp.getTvObservableList().remove(supply);
+            Doctor doctor = MainApp.getDoctorsRegister().getSpecialists().get(key);
+            MainApp.getDoctorsRegister().deleteSpecialist(key);
+            MainApp.getDocObservableList().remove(doctor);
             textFieldKey.setText("");
             Button closeButton = (Button) event.getSource();
             Stage stage = (Stage) closeButton.getScene().getWindow();

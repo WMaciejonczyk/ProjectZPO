@@ -10,9 +10,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * The MaterialApp class represents the application for adding materials.
+ * The AddDoctorApp class represents the application for adding doctors.
  */
-public class MaterialApp extends Application {
+public class ReservationApp extends Application {
 
     /**
      * Starts the application.
@@ -22,11 +22,11 @@ public class MaterialApp extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("MaterialWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("ReservationWindow.fxml"));
         Parent root = loader.load();
 
-        Scene scene = new Scene(root, 300, 250);
-        stage.setTitle("Material Adding Menu");
+        Scene scene = new Scene(root, 300, 350);
+        stage.setTitle("Reservation Menu");
         stage.setScene(scene);
         stage.show();
     }

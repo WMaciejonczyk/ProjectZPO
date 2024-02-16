@@ -1,4 +1,6 @@
-package Project;
+package Project.equipment;
+
+import Project.supply.Supply;
 
 import java.time.LocalDate;
 

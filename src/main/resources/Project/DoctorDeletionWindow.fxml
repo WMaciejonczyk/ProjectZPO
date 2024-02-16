@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<Pane xmlns:fx="http://javafx.com/fxml" fx:controller="Project.DeleteDoctorController">
+    <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
+    <Label text="Doctors key:" layoutX="60" layoutY="15"/>
+    <TextField fx:id="textFieldKey" promptText="Enter doctors key" layoutX="25" layoutY="40"/>
+    <Button fx:id="submitDeletion" text="Delete" layoutX="65" layoutY="75" onAction="#deleteDoctor"/>
+</Pane>

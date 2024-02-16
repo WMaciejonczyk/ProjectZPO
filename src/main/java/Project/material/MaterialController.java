@@ -1,5 +1,7 @@
-package Project;
+package Project.material;
 
+import Project.exceptions.InvalidInputException;
+import Project.MainApp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -10,15 +12,12 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 /**
- * The MedicineController class controls the interaction with the medicine window.
+ * The MaterialController class controls the interaction with the material window.
  */
-public class MedicineController {
+public class MaterialController {
 
     @FXML
     TextField textFieldName;
-
-    @FXML
-    TextField textFieldATC;
 
     @FXML
     TextField textFieldCost;
@@ -30,28 +29,27 @@ public class MedicineController {
     TextField textFieldExpirationDate;
 
     @FXML
-    Button submitMedicine;
+    Button submitMaterial;
 
     /**
-     * Adds the medicine to the storage when the submit button is clicked.
+     * Adds the material to the storage when the submit button is clicked.
      *
      * @param event The action event triggered by the submit button.
      * @throws IOException if an I/O exception occurs.
      */
     @FXML
-    protected void addMedicineToStorage(ActionEvent event) throws IOException {
-        if (textFieldName.getText().isEmpty() || textFieldATC.getText().isEmpty() || textFieldCost.getText().isEmpty()
-                || textFieldAmount.getText().isEmpty() || textFieldExpirationDate.getText().isEmpty()) {
+    protected void addMaterialToStorage(ActionEvent event) throws IOException {
+        if (textFieldName.getText().isEmpty() || textFieldCost.getText().isEmpty() || textFieldAmount.getText().isEmpty()
+                || textFieldExpirationDate.getText().isEmpty()) {
             throw new InvalidInputException("Fields cannot be empty.");
         } else {
             String name = textFieldName.getText();
-            String atc = textFieldATC.getText();
             double cost = Double.parseDouble(textFieldCost.getText());
             int amount = Integer.parseInt(textFieldAmount.getText());
             LocalDate terminationDate = LocalDate.parse(textFieldExpirationDate.getText());
-            Medicine medicine = new Medicine(name, atc, cost, amount, terminationDate);
-            MainApp.getStorage().addSupply(medicine);
-            MainApp.getTvObservableList().add(medicine);
+            Materials material = new Materials(name, cost, amount, terminationDate);
+            MainApp.getStorage().addSupply(material);
+            MainApp.getTvObservableList().add(material);
             textFieldName.setText(null);
             textFieldCost.setText(null);
             textFieldAmount.setText(null);
@@ -63,9 +61,9 @@ public class MedicineController {
     }
 
     /**
-     * Opens the main application after adding medicine to the storage.
+     * Opens the main application after adding material to the storage.
      *
-     * @param stage The stage of the medicine window.
+     * @param stage The stage of the material window.
      * @throws IOException if an I/O exception occurs.
      */
     private void openMainApp(Stage stage) throws IOException {

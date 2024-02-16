@@ -1,4 +1,8 @@
-import Project.*;
+import Project.equipment.Equipment;
+import Project.material.Materials;
+import Project.medicine.Medicine;
+import Project.storage.Storage;
+import Project.supply.Supply;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,6 @@
-package Project;
+package Project.material;
+
+import Project.supply.Supply;
 
 import java.time.LocalDate;
 

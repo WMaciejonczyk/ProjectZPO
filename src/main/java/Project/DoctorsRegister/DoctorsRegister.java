@@ -1,10 +1,12 @@
-package Project;
+package Project.DoctorsRegister;
+
+import Project.doctor.Doctor;
 
 import java.util.TreeMap;
 
-public class Specialists {
+public class DoctorsRegister {
     private TreeMap<Integer, Doctor> specialists = new TreeMap<>();
-    public Specialists() {}
+    public DoctorsRegister() {}
 
     public TreeMap<Integer, Doctor> getSpecialists() {
         return specialists;
@@ -40,22 +42,9 @@ public class Specialists {
         }
     }
 
-    public void updateContactInfo(int key, String string, String info) {
-        string = string.toLowerCase();
-        if (string.equals("phone number")) {
-            getSpecialists().get(key).setName(info);
-        }
-        else if (string.equals("email")) {
-            getSpecialists().get(key).setSurname(info);
-        }
-        else {
-            throw new IllegalArgumentException("Invalid info input");
-        }
-    }
-
     public void displaySpecialistInfo(int key) {
         if (getSpecialists().isEmpty()) {
-            throw new IllegalArgumentException("No registered specialists.");
+            throw new IllegalArgumentException("No registered doctors.");
         }
         else {
             if (getSpecialists().containsKey(key)) {
