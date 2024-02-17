@@ -13,9 +13,9 @@ import java.time.LocalDate;
 import Project.doctor.Doctor;
 
 /**
- * The ReservationAppControler class controls the interaction with the doctor addition window.
+ * The ReservationAppController class controls the interaction with the doctor addition window.
  */
-public class ReservationAppControler {
+public class ReservationAppController {
 
     @FXML
     TextField textDoctorID;
@@ -78,14 +78,17 @@ public class ReservationAppControler {
             materialAmount, medicineName, medicineAmount)) {
                 Project.reservation.Reservation reservation = new Project.reservation.Reservation(id, reservationStart, reservationEnd, equipmentName,
                         equipmentAmount, materialName, materialAmount, medicineName, medicineAmount);
-
-                MainApp.getDoctorsRegister().addSpecialist(doc);
-                MainApp.getDocObservableList().add(doc);
-                textDoctorName.setText(null);
-                textDoctorSurname.setText(null);
-                textPhoneNumber.setText(null);
-                textEmail.setText(null);
-                comboDoctorSpeciality.setValue(Doctor.Speciality.OTHER);
+                MainApp.getReservationsRegister().addReservation(reservation);
+                MainApp.getResObservableList().add(reservation);
+                textDoctorID.setText(null);
+                textReservationStart.setText(null);
+                textReservationEnd.setText(null);
+                textEquipmentName.setText(null);
+                textEquipmentAmount.setText(null);
+                textMaterialName.setText(null);
+                textMaterialAmount.setText(null);
+                textMedicineName.setText(null);
+                textMedicineAmount.setText(null);
             }
             Button closeButton = (Button) event.getSource();
             Stage stage = (Stage) closeButton.getScene().getWindow();

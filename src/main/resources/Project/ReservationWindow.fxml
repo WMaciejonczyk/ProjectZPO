@@ -5,48 +5,48 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.Pane?>
-<Pane fx:controller="Project.ReservationAppControler"
+<Pane fx:controller="Project.ReservationAppController"
       xmlns:fx="http://javafx.com/fxml">
     <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
 
 
-    <Label text="Doctor ID:" layoutX="51" layoutY="30"/>
+    <Label text="Doctor ID:" layoutX="77" layoutY="30"/>
 
-    <TextField fx:id="textDoctorID" promptText="Enter doctors id" layoutX="95" layoutY="28"/>
+    <TextField fx:id="textDoctorID" promptText="Enter doctors id" layoutX="140" layoutY="28"/>
 
+    <Label text="Reservation start date:" layoutX="12" layoutY="70"/>
 
+    <TextField fx:id="textReservationStart" promptText="Enter reservation start date" layoutX="140" layoutY="68"/>
 
-    <Label text="Reservation Start Date" layoutX="58" layoutY="70"/>
+    <Label text="Reservation end date:" layoutX="16" layoutY="110"/>
 
-    <TextField fx:id="textReservationStart" promptText="Enter reservation start date" layoutX="95" layoutY="68"/>
+    <TextField fx:id="textReservationEnd" promptText="Enter reservation end date" layoutX="140" layoutY="108"/>
 
-    <Label text="Reservation End Date" layoutX="39" layoutY="110"/>
+    <Label text="Material name:" layoutX="53" layoutY="150"/>
 
-    <TextField fx:id="textReservationEnd" promptText="Enter reservation end date" layoutX="95" layoutY="108"/>
+    <TextField fx:id="textMaterialName" promptText="Enter material name" layoutX="140" layoutY="148"/>
 
+    <Label text="Material amount:" layoutX="42" layoutY="190"/>
 
+    <TextField fx:id="textMaterialAmount" promptText="Enter material amount" layoutX="140" layoutY="188"/>
 
-    <Label text="Equipment name:" layoutX="18" layoutY="150"/>
-    <TextField fx:id="textEquipmentName" promptText="Enter equipment name" layoutX="95" layoutY="148"/>
+    <Label text="Equipment name:" layoutX="39" layoutY="230"/>
 
-    <Label text="Equipment amount:" layoutX="18" layoutY="190"/>
-    <TextField fx:id="textEquipmentAmount" promptText="Enter equipment amount" layoutX="95" layoutY="188"/>
+    <TextField fx:id="textEquipmentName" promptText="Enter equipment name" layoutX="140" layoutY="228"/>
 
+    <Label text="Equipment amount:" layoutX="27" layoutY="270"/>
 
-    <Label text="Material name:" layoutX="18" layoutY="150"/>
-    <TextField fx:id="textMaterialName" promptText="Enter Material name" layoutX="95" layoutY="148"/>
+    <TextField fx:id="textEquipmentAmount" promptText="Enter equipment amount" layoutX="140" layoutY="268"/>
 
-    <Label text="Material amount:" layoutX="18" layoutY="150"/>
-    <TextField fx:id="textMaterialAmount" promptText="Enter Material amount" layoutX="95" layoutY="148"/><Label text="Equipment name:" layoutX="18" layoutY="150"/>
+    <Label text="Medicine name:" layoutX="47" layoutY="310"/>
 
+    <TextField fx:id="textMedicineName" promptText="Enter medicine name" layoutX="140" layoutY="308"/>
 
-    <Label text="Medicine name:" layoutX="18" layoutY="150"/>
-    <TextField fx:id="textMedicineName" promptText="Enter Medicine name" layoutX="95" layoutY="148"/>
+    <Label text="Medicine amount:" layoutX="36" layoutY="350"/>
 
-    <Label text="Medicine amount:" layoutX="18" layoutY="150"/>
-    <TextField fx:id="textMedicineAmount" promptText="Enter Medicine amount" layoutX="95" layoutY="148"/>
+    <TextField fx:id="textMedicineAmount" promptText="Enter medicine amount" layoutX="140" layoutY="348"/>
 
-    <Button fx:id="submitReservation" text="Submit" layoutX="105" layoutY="190"
+    <Button fx:id="submitReservation" text="Submit" layoutX="125" layoutY="390"
 
             onAction="#addReservationToReservationRegister"/>
 </Pane>

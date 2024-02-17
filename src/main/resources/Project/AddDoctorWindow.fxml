@@ -8,7 +8,7 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.collections.FXCollections?>
 
-<?import Project.doctor.Doctor.Speciality?>
+<?import Project.doctor.Speciality?>
 <Pane fx:controller="Project.AddDoctorController"
       xmlns:fx="http://javafx.com/fxml">
     <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>

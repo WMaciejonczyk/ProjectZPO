@@ -56,7 +56,7 @@ public class ReservationRegisterController implements Initializable {
      */
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
-        colDoctorID.setCellValueFactory(new PropertyValueFactory<>("doctorID"));
+        colDoctorID.setCellValueFactory(new PropertyValueFactory<>("doctorId"));
         colReservationStart.setCellValueFactory(new PropertyValueFactory<>("reservationStart"));
         colReservationEnd.setCellValueFactory(new PropertyValueFactory<>("reservationEnd"));
         colEquipmentName.setCellValueFactory(new PropertyValueFactory<>("equipmentName"));
@@ -65,7 +65,7 @@ public class ReservationRegisterController implements Initializable {
         colMaterialAmount.setCellValueFactory(new PropertyValueFactory<>("materialAmount"));
         colMedicineName.setCellValueFactory(new PropertyValueFactory<>("medicineName"));
         colMedicineAmount.setCellValueFactory(new PropertyValueFactory<>("medicineAmount"));
-        tableView.setItems(MainApp.getReservationsRegister());
+        tableView.setItems(MainApp.getResObservableList());
         tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
     }
 

@@ -276,7 +276,7 @@ public class MainController {
         Button closeButton = (Button) event.getSource();
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
-        showStorageContents(stage);
+        showDoctors(stage);
     }
 
     /**
@@ -315,39 +315,39 @@ public class MainController {
     protected void showReservationMenu(Stage stage) {
         try {
             ReservationApp reservationApp = new ReservationApp();
-            ReservationApp.start(stage);
+            reservationApp.start(stage);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
 
-    /**
-     * Handles the action event for deleting a reservation.
-     *
-     * @param event The action event triggered by clicking the "Delete Reservation" button.
-     */
-    @FXML
-    protected void handleDeleteReservation(ActionEvent event) {
-        Button closeButton = (Button) event.getSource();
-        Stage stage = (Stage) closeButton.getScene().getWindow();
-        stage.close();
-        showDeleteReservationMenu(stage);
-    }
-
-    /**
-     * Shows the delete reservation menu.
-     *
-     * @param stage The stage of the main menu.
-     */
-    protected void showDeleteReservationMenu(Stage stage) {
-        try {
-            DeleteReservationApp deleteReservationApp = new DeleteReservationApp();
-            deleteReservationApp.start(stage);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    /**
+//     * Handles the action event for deleting a reservation.
+//     *
+//     * @param event The action event triggered by clicking the "Delete Reservation" button.
+//     */
+//    @FXML
+//    protected void handleDeleteReservation(ActionEvent event) {
+//        Button closeButton = (Button) event.getSource();
+//        Stage stage = (Stage) closeButton.getScene().getWindow();
+//        stage.close();
+//        showDeleteReservationMenu(stage);
+//    }
+//
+//    /**
+//     * Shows the delete reservation menu.
+//     *
+//     * @param stage The stage of the main menu.
+//     */
+//    protected void showDeleteReservationMenu(Stage stage) {
+//        try {
+//            DeleteReservationApp deleteReservationApp = new DeleteReservationApp();
+//            deleteReservationApp.start(stage);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     /**
      * Handles the action event for showing reservations.

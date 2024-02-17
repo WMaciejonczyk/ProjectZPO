@@ -21,4 +21,8 @@ module Project {
     opens Project.doctor to javafx.fxml;
     exports Project.DoctorsRegister;
     opens Project.DoctorsRegister to javafx.fxml;
+    exports Project.ReservationsRegister;
+    opens  Project.ReservationsRegister to javafx.fxml;
+    exports Project.reservation;
+    opens Project.reservation to javafx.fxml;
 }

@@ -2,7 +2,9 @@ package Project;
 
 
 import Project.DoctorsRegister.DoctorsRegister;
+import Project.ReservationsRegister.ReservationsRegister;
 import Project.doctor.Doctor;
+import Project.reservation.Reservation;
 import Project.storage.Storage;
 import Project.supply.Supply;
 import javafx.application.Application;
@@ -21,10 +23,10 @@ import java.io.IOException;
 public class MainApp extends Application {
     private static ObservableList<Supply> tvObservableList = FXCollections.observableArrayList();
     private static Storage storage = new Storage();
-
     private static DoctorsRegister doctorsRegister = new DoctorsRegister();
-
     private static ObservableList<Doctor> DocObservableList = FXCollections.observableArrayList();
+    private static ReservationsRegister reservationsRegister = new ReservationsRegister();
+    private static ObservableList<Reservation> resObservableList = FXCollections.observableArrayList();
 
     /**
      * Starts the application.
@@ -87,12 +89,11 @@ public class MainApp extends Application {
      */
     public static DoctorsRegister getDoctorsRegister() {return doctorsRegister;}
 
-    /**
-     * Gets the observable list of doctors.
-     *
-     * @return The observable list of doctors.
-     */
-    public static ObservableList<Doctor> getDocObservableList() {
-        return DocObservableList;
+    public static ReservationsRegister getReservationsRegister() {
+        return reservationsRegister;
+    }
+
+    public static ObservableList<Reservation> getResObservableList() {
+        return resObservableList;
     }
 }

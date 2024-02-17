@@ -36,7 +36,7 @@ public class DeleteDoctorController {
             Doctor doctor = MainApp.getDoctorsRegister().getSpecialists().get(key);
             MainApp.getDoctorsRegister().deleteSpecialist(key);
             MainApp.getDocObservableList().remove(doctor);
-            textFieldKey.setText("");
+            textFieldKey.setText(null);
             Button closeButton = (Button) event.getSource();
             Stage stage = (Stage) closeButton.getScene().getWindow();
             stage.close();

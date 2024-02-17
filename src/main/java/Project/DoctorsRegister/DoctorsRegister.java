@@ -6,7 +6,6 @@ import java.util.TreeMap;
 
 public class DoctorsRegister {
     private TreeMap<Integer, Doctor> specialists = new TreeMap<>();
-    public DoctorsRegister() {}
 
     public TreeMap<Integer, Doctor> getSpecialists() {
         return specialists;
@@ -26,7 +25,11 @@ public class DoctorsRegister {
     }
 
     public void deleteSpecialist(int key) {
-        getSpecialists().remove(key);
+        if (getSpecialists().containsKey(key)) {
+            getSpecialists().remove(key);
+        } else {
+            throw new IllegalArgumentException("Incorrect key.");
+        }
     }
 
     public void updatePersonalInfo(int key, String string, String info) {

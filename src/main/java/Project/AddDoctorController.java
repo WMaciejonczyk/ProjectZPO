@@ -1,5 +1,6 @@
 package Project;
 
+import Project.doctor.Speciality;
 import Project.exceptions.InvalidInputException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -23,7 +24,7 @@ public class AddDoctorController {
     TextField textDoctorSurname;
 
     @FXML
-    private ComboBox<Doctor.Speciality> comboDoctorSpeciality;
+    ComboBox<Speciality> comboDoctorSpeciality;
 
     @FXML
     TextField textEmail;
@@ -45,11 +46,11 @@ public class AddDoctorController {
     protected void addDoctorToDoctorsRegister(ActionEvent event) throws IOException {
         if (textDoctorName.getText().isEmpty() || textDoctorSurname.getText().isEmpty() || textEmail.getText().isEmpty()
                 || textPhoneNumber.getText().isEmpty()) {
-            throw new InvalidInputException("Fields cannot be empty .");
+            throw new InvalidInputException("Fields cannot be empty.");
         } else {
             String name = textDoctorName.getText();
             String surname = textDoctorSurname.getText();
-            Doctor.Speciality speciality = comboDoctorSpeciality.getValue();
+            Speciality speciality = comboDoctorSpeciality.getValue();
             String email = textEmail.getText();
             String phone = textPhoneNumber.getText();
 
@@ -60,7 +61,7 @@ public class AddDoctorController {
             textDoctorSurname.setText(null);
             textPhoneNumber.setText(null);
             textEmail.setText(null);
-            comboDoctorSpeciality.setValue(Doctor.Speciality.OTHER);
+            comboDoctorSpeciality.setValue(Speciality.OTHER);
             Button closeButton = (Button) event.getSource();
             Stage stage = (Stage) closeButton.getScene().getWindow();
             stage.close();
