@@ -1,4 +1,4 @@
-package Project;
+package Project.apps;
 
 import Project.MainApp;
 import javafx.application.Application;

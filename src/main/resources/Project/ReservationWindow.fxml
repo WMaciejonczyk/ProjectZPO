@@ -10,7 +10,7 @@
 <?import Project.equipment.EquipmentType?>
 <?import Project.material.Utility?>
 
-<Pane fx:controller="Project.ReservationAppController"
+<Pane fx:controller="Project.reservation.ReservationAppController"
       xmlns:fx="http://javafx.com/fxml">
     <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
 

@@ -1,5 +1,6 @@
 package Project;
 
+import Project.apps.*;
 import Project.supply.SupplyDeletionApp;
 import Project.supply.SupplyUpdateApp;
 import javafx.event.ActionEvent;

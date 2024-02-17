@@ -1,4 +1,4 @@
-package Project;
+package Project.apps;
 
 import Project.MainApp;
 import javafx.application.Application;
@@ -10,9 +10,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * The MaterialApp class represents the application for adding materials.
+ * The DoctorsRegisterApp class represents the application for displaying doctors register contents.
  */
-public class MaterialApp extends Application {
+public class DoctorsRegisterApp extends Application {
 
     /**
      * Starts the application.
@@ -22,11 +22,10 @@ public class MaterialApp extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("MaterialWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("DoctorsRegisterWindow.fxml"));
         Parent root = loader.load();
-
-        Scene scene = new Scene(root, 300, 250);
-        stage.setTitle("Material Adding Menu");
+        Scene scene = new Scene(root, 450, 450);
+        stage.setTitle("Doctors Register Contents");
         stage.setScene(scene);
         stage.show();
     }

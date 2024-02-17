@@ -1,5 +1,6 @@
-package Project;
+package Project.doctor;
 
+import Project.MainApp;
 import Project.doctor.Speciality;
 import Project.exceptions.InvalidInputException;
 import javafx.event.ActionEvent;

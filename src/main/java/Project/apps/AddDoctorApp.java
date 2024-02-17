@@ -1,5 +1,6 @@
-package Project;
+package Project.apps;
 
+import Project.MainApp;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,9 +10,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * The StorageApp class represents the application for displaying storage contents.
+ * The AddDoctorApp class represents the application for adding doctors.
  */
-public class StorageApp extends Application {
+public class AddDoctorApp extends Application {
 
     /**
      * Starts the application.
@@ -21,10 +22,11 @@ public class StorageApp extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("StorageWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("AddDoctorWindow.fxml"));
         Parent root = loader.load();
-        Scene scene = new Scene(root, 450, 450);
-        stage.setTitle("Storage Contents");
+
+        Scene scene = new Scene(root, 300, 350);
+        stage.setTitle("Doctor Adding Menu");
         stage.setScene(scene);
         stage.show();
     }
