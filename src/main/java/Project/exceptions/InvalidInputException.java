@@ -1,4 +1,4 @@
-package Project;
+package Project.exceptions;
 
 /**
  * The InvalidInputException class represents an exception thrown when invalid text field input is encountered.

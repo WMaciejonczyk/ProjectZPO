@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+
+<?import Project.doctor.Doctor.Speciality?>
+<Pane fx:controller="Project.AddDoctorController"
+      xmlns:fx="http://javafx.com/fxml">
+    <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
+    <Label text="Name" layoutX="51" layoutY="30"/>
+
+    <TextField fx:id="textDoctorName" promptText="Enter Doctors Name:" layoutX="95" layoutY="28"/>
+
+
+    <Label text="Surname:" layoutX="58" layoutY="70"/>
+
+    <TextField fx:id="textDoctorSurname" promptText="Enter Doctors Surname:" layoutX="95" layoutY="68"/>
+
+
+    <Label text="Speciality" layoutX="39" layoutY="110"/>
+
+    <ComboBox fx:id="comboDoctorSpeciality" layoutX="95" layoutY="108">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <Speciality fx:value="CARDIOLOGY"/>
+                <Speciality fx:value="ORTHOPEDICS"/>
+                <Speciality fx:value="ENDOCRINOLOGY"/>
+                <Speciality fx:value="NEUROLOGY"/>
+                <Speciality fx:value="OTHER"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+
+    <Label text="Email" layoutX="18" layoutY="150"/>
+
+    <TextField fx:id="textEmail" promptText="Enter Doctors email address: " layoutX="95" layoutY="148"/>
+
+
+    <Label text="Phone Number" layoutX="18" layoutY="190"/>
+
+    <TextField fx:id="textPhoneNumber" promptText="Enter Doctors phone number: " layoutX="95" layoutY="188"/>
+
+
+    <Button fx:id="submitDoctor" text="Submit doctor" layoutX="105" layoutY="190"
+
+            onAction="#addDoctorToDoctorsRegister"/>
+</Pane>

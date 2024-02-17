@@ -1,4 +1,4 @@
-package Project;
+package Project.doctor;
 
 public class Doctor {
     public enum Speciality {

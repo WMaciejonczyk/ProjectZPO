@@ -6,7 +6,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.collections.FXCollections?>
 
-<Pane xmlns:fx="http://javafx.com/fxml" fx:controller="Project.SupplyUpdateController">
+<Pane xmlns:fx="http://javafx.com/fxml" fx:controller="Project.supply.SupplyUpdateController">
 <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
     <Label text="Supply key:" layoutX="60" layoutY="15"/>
     <TextField fx:id="textFieldKey" promptText="Enter supply key" layoutX="25" layoutY="40"/>

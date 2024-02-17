@@ -1,4 +1,4 @@
-package Project;
+package Project.supply;
 
 import Project.MainApp;
 import javafx.application.Application;
@@ -9,10 +9,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/**
- * The MaterialApp class represents the application for adding materials.
- */
-public class MaterialApp extends Application {
+public class SupplyDeletionApp extends Application {
+
+    /**
+     * The main entry point for the application.
+     *
+     * @param args The command-line arguments.
+     */
+    public static void main(String[] args) {
+        launch();
+    }
 
     /**
      * Starts the application.
@@ -22,21 +28,12 @@ public class MaterialApp extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("MaterialWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("DeletionWindow.fxml"));
         Parent root = loader.load();
 
-        Scene scene = new Scene(root, 300, 250);
-        stage.setTitle("Material Adding Menu");
+        Scene scene = new Scene(root, 200, 130);
+        stage.setTitle("Supply Deletion Menu");
         stage.setScene(scene);
         stage.show();
-    }
-
-    /**
-     * The main entry point for the application.
-     *
-     * @param args The command-line arguments.
-     */
-    public static void main(String[] args) {
-        launch();
     }
 }

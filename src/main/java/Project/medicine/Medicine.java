@@ -1,4 +1,6 @@
-package Project;
+package Project.medicine;
+
+import Project.supply.Supply;
 
 import java.time.LocalDate;
 import java.util.Arrays;

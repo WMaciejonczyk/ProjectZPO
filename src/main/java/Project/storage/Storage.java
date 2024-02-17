@@ -1,4 +1,9 @@
-package Project;
+package Project.storage;
+
+import Project.equipment.Equipment;
+import Project.material.Materials;
+import Project.medicine.Medicine;
+import Project.supply.Supply;
 
 import java.time.LocalDate;
 import java.util.Arrays;

@@ -1,14 +1,15 @@
 package Project;
 
+import Project.MainApp;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
-public class SupplyDeletionApp extends Application {
+
+public class DeleteDoctorApp extends Application {
 
     /**
      * The main entry point for the application.
@@ -27,11 +28,11 @@ public class SupplyDeletionApp extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("DeletionWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("DoctorDeletionWindow.fxml"));
         Parent root = loader.load();
 
         Scene scene = new Scene(root, 200, 130);
-        stage.setTitle("Supply Deletion Menu");
+        stage.setTitle("Doctor Deletion Menu");
         stage.setScene(scene);
         stage.show();
     }

@@ -1,5 +1,10 @@
 package Project;
 
+
+import Project.DoctorsRegister.DoctorsRegister;
+import Project.doctor.Doctor;
+import Project.storage.Storage;
+import Project.supply.Supply;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -17,6 +22,10 @@ public class MainApp extends Application {
     private static ObservableList<Supply> tvObservableList = FXCollections.observableArrayList();
     private static Storage storage = new Storage();
 
+    private static DoctorsRegister doctorsRegister = new DoctorsRegister();
+
+    private static ObservableList<Doctor> DocObservableList = FXCollections.observableArrayList();
+
     /**
      * Starts the application.
      *
@@ -28,7 +37,7 @@ public class MainApp extends Application {
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("MainWindow.fxml"));
         Parent root = loader.load();
 
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(root, 300, 400);
         stage.setTitle("Main Menu");
         stage.setScene(scene);
         stage.show();
@@ -59,5 +68,31 @@ public class MainApp extends Application {
      */
     public static Storage getStorage() {
         return storage;
+    }
+
+
+    /**
+     * Gets the observable list of doctors.
+     *
+     * @return The observable list of doctors.
+     */
+    public static ObservableList<Doctor> getDocObservableList() {
+        return DocObservableList;
+    }
+
+    /**
+     * Gets the reservation register instance.
+     *
+     * @return The reservation register instance.
+     */
+    public static DoctorsRegister getDoctorsRegister() {return doctorsRegister;}
+
+    /**
+     * Gets the observable list of doctors.
+     *
+     * @return The observable list of doctors.
+     */
+    public static ObservableList<Doctor> getDocObservableList() {
+        return DocObservableList;
     }
 }
