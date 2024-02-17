@@ -1,9 +1,11 @@
 package Project;
 
 import Project.exceptions.InvalidInputException;
+import Project.material.Utility;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -11,6 +13,7 @@ import java.time.LocalDate;
 
 
 import Project.doctor.Doctor;
+import Project.equipment.EquipmentType;
 
 /**
  * The ReservationAppController class controls the interaction with the doctor addition window.
@@ -27,19 +30,19 @@ public class ReservationAppController {
     TextField textReservationEnd;
 
     @FXML
-    TextField textEquipmentName;
+    ComboBox<EquipmentType> equipmentTypeComboBox;
 
     @FXML
     TextField textEquipmentAmount;
 
     @FXML
-    TextField textMaterialName;
+    ComboBox<Utility> materialTypeComboBox;
 
     @FXML
     TextField textMaterialAmount;
 
     @FXML
-    TextField textMedicineName;
+    TextField textMedicineATC;
 
     @FXML
     TextField textMedicineAmount;
@@ -57,38 +60,42 @@ public class ReservationAppController {
     @FXML
     protected void addReservationToReservationRegister(ActionEvent event) throws IOException {
         if (textDoctorID.getText().isEmpty() || textReservationStart.getText().isEmpty()
-                || textReservationEnd.getText().isEmpty() || textEquipmentName.getText().isEmpty()
-                || textEquipmentAmount.getText().isEmpty() || textMaterialName.getText().isEmpty()
-                || textMaterialAmount.getText().isEmpty()|| textMedicineName.getText().isEmpty()
+                || textReservationEnd.getText().isEmpty() || equipmentTypeComboBox.getValue() == null
+                || textEquipmentAmount.getText().isEmpty() || materialTypeComboBox.getValue() == null
+                || textMaterialAmount.getText().isEmpty()|| textMedicineATC.getText().isEmpty()
                 || textMedicineAmount.getText().isEmpty()){
             throw new InvalidInputException("Fields cannot be empty .");
         } else {
             String id = textDoctorID.getText();
             LocalDate reservationStart = LocalDate.parse(textReservationStart.getText());
             LocalDate reservationEnd = LocalDate.parse(textReservationStart.getText());
-            String equipmentName = textEquipmentName.getText();
+            EquipmentType equipmentType = equipmentTypeComboBox.getValue();
             Integer equipmentAmount = Integer.parseInt(textEquipmentAmount.getText());
-            String materialName = textMaterialName.getText();
+            Utility materialType = materialTypeComboBox.getValue();
             Integer materialAmount = Integer.parseInt(textMaterialAmount.getText());
-            String medicineName = textMedicineName.getText();
+            String medicineATC = textMedicineATC.getText();
             Integer medicineAmount = Integer.parseInt(textMedicineAmount.getText());
             if (equipmentAmount < 0 || materialAmount < 0 || medicineAmount < 0) {
                 throw new NumberFormatException();}
-            if (checkReservation(id, reservationStart, reservationEnd, equipmentName, equipmentAmount, materialName,
-            materialAmount, medicineName, medicineAmount)) {
-                Project.reservation.Reservation reservation = new Project.reservation.Reservation(id, reservationStart, reservationEnd, equipmentName,
-                        equipmentAmount, materialName, materialAmount, medicineName, medicineAmount);
+            if (checkReservation(id, reservationStart, reservationEnd, equipmentType, equipmentAmount, materialType,
+                    materialAmount, medicineATC, medicineAmount)) {
+                Project.reservation.Reservation reservation = new Project.reservation.Reservation(id, reservationStart, reservationEnd, equipmentType,
+                        equipmentAmount, materialType, materialAmount, medicineATC, medicineAmount);
                 MainApp.getReservationsRegister().addReservation(reservation);
                 MainApp.getResObservableList().add(reservation);
                 textDoctorID.setText(null);
                 textReservationStart.setText(null);
                 textReservationEnd.setText(null);
-                textEquipmentName.setText(null);
+                equipmentTypeComboBox.setValue(null);
                 textEquipmentAmount.setText(null);
-                textMaterialName.setText(null);
+                materialTypeComboBox.setValue(null);
                 textMaterialAmount.setText(null);
-                textMedicineName.setText(null);
+                textMedicineATC.setText(null);
                 textMedicineAmount.setText(null);
+            }
+            else
+            {
+                throw new InvalidInputException("Not enough equipment, material or medicine in storage.");
             }
             Button closeButton = (Button) event.getSource();
             Stage stage = (Stage) closeButton.getScene().getWindow();
@@ -110,9 +117,9 @@ public class ReservationAppController {
 
 
     public boolean checkReservation(String doctorId, LocalDate reservationStart, LocalDate reservationEnd,
-                                    String equipmentName, int equipmentAmount,
-                                    String materialName, int materialAmount,
-                                    String medicineName, int medicineAmount) {
+                                    EquipmentType equipmentType, int equipmentAmount,
+                                    Utility materialType, int materialAmount,
+                                    String medicineATC, int medicineAmount) {
 
         if (equipmentAmount <= 0 || materialAmount <= 0 || medicineAmount <= 0) {
             return false;
@@ -121,29 +128,29 @@ public class ReservationAppController {
             return false;
         }
 
-        if (reservationCollides(equipmentName, reservationStart, reservationEnd)) {
+        if (checkStorageAvailability(equipmentType, equipmentAmount, materialType, materialAmount, medicineATC, medicineAmount)) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean checkStorageAvailability(EquipmentType equipmentType, int equipmentAmount,
+                                             Utility materialType, int materialAmount,
+                                             String medicineATC, int medicineAmount) {
+
+        if (! MainApp.getStorage().isEnoughCertainEquipment(equipmentType.toString().toUpperCase(), equipmentAmount)) {
             return false;
         }
 
-        if (checkStorageAvailability(equipmentName, equipmentAmount, materialName, materialAmount, medicineName, medicineAmount)) {
+        if (! MainApp.getStorage().isEnoughCertainMaterials(materialType.toString().toUpperCase(), materialAmount)) {
+            return false;
+        }
+
+        if (! MainApp.getStorage().isEnoughCertainMedicine(medicineATC, medicineAmount)) {
             return false;
         }
 
         return true;
-    }
-
-    private boolean reservationCollides(String equipmentName, LocalDate reservationStart, LocalDate reservationEnd) {
-        // Implement collision check logic here
-
-        return false;
-    }
-
-    private boolean checkStorageAvailability(String equipmentName, int equipmentAmount,
-                                             String materialName, int materialAmount,
-                                             String medicineName, int medicineAmount) {
-        // Implement storage availability check logic here
-
-        return false;
     }
 
 }

@@ -13,11 +13,11 @@
             <TableColumn fx:id="colDoctorID" maxWidth="100.0" text="Doctor ID" />
             <TableColumn fx:id="colReservationStart" text="Reservation Start" />
             <TableColumn fx:id="colReservationEnd" text="Reservation End" />
-            <TableColumn fx:id="colEquipmentName" text="Equipment Name" />
+            <TableColumn fx:id="colEquipmentName" text="Equipment Type" />
             <TableColumn fx:id="colEquipmentAmount"  text="Equipment Amount" />
-            <TableColumn fx:id="colMaterialName"  text="Material Name" />
+            <TableColumn fx:id="colMaterialName"  text="Material Type" />
             <TableColumn fx:id="colMaterialAmount" text="Material Amount" />
-            <TableColumn fx:id="colMedicineName" text="Medicine Name" />
+            <TableColumn fx:id="colMedicineName" text="Medicine Group" />
             <TableColumn fx:id="colMedicineAmount" text="Medicine Amount" />
         </columns>
     </TableView>

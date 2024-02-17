@@ -8,17 +8,6 @@ import java.time.LocalDate;
  * This class represents materials used for medical supplies. It implements the Supply interface.
  */
 public class Materials implements Supply {
-
-    /**
-     * Enumeration representing different utilities of the materials.
-     */
-    public enum Utility {
-        HEMORRHAGE_CONTROL,
-        STERILIZATION,
-        IMMOBILIZATION,
-        OTHER
-    }
-
     private String name;
     private double cost;
     private int amount;
