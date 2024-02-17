@@ -72,9 +72,18 @@ public class MainApp extends Application {
 
 
     /**
-     * Gets the doctors register instance.
+     * Gets the observable list of doctors.
      *
-     * @return The doctors register instance.
+     * @return The observable list of doctors.
+     */
+    public static ObservableList<Doctor> getDocObservableList() {
+        return DocObservableList;
+    }
+
+    /**
+     * Gets the reservation register instance.
+     *
+     * @return The reservation register instance.
      */
     public static DoctorsRegister getDoctorsRegister() {return doctorsRegister;}
 

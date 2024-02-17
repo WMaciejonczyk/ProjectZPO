@@ -2,7 +2,6 @@ package Project;
 
 import Project.doctor.Doctor;
 import Project.exceptions.InvalidInputException;
-import Project.MainApp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

@@ -6,6 +6,9 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+
+<?import Project.doctor.Doctor.Speciality?>
 <Pane fx:controller="Project.AddDoctorController"
       xmlns:fx="http://javafx.com/fxml">
     <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
@@ -21,7 +24,17 @@
 
     <Label text="Speciality" layoutX="39" layoutY="110"/>
 
-    <ComboBox fx:id="comboDoctorSpeciality" layoutX="95" layoutY="108"/>
+    <ComboBox fx:id="comboDoctorSpeciality" layoutX="95" layoutY="108">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <Speciality fx:value="CARDIOLOGY"/>
+                <Speciality fx:value="ORTHOPEDICS"/>
+                <Speciality fx:value="ENDOCRINOLOGY"/>
+                <Speciality fx:value="NEUROLOGY"/>
+                <Speciality fx:value="OTHER"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
 
 
     <Label text="Email" layoutX="18" layoutY="150"/>

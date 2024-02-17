@@ -1,16 +1,13 @@
 package Project;
 
-import Project.equipment.Equipment;
 import Project.exceptions.InvalidInputException;
-import Project.MainApp;
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
-import java.time.LocalDate;
+
 import Project.doctor.Doctor;
 import javafx.scene.control.ComboBox;
 
