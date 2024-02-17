@@ -1,7 +1,9 @@
 package Project.storage;
 
 import Project.equipment.Equipment;
+import Project.equipment.EquipmentType;
 import Project.material.Materials;
+import Project.material.Utility;
 import Project.medicine.Medicine;
 import Project.supply.Supply;
 
@@ -138,12 +140,12 @@ public class Storage {
             throw new IllegalArgumentException("Invalid amount input.");
         } else {
             int totalMaterials;
-            List<String> list = Arrays.stream(Materials.Utility.values()).map(Enum::name).toList();
+            List<String> list = Arrays.stream(Utility.values()).map(Enum::name).toList();
             if (list.contains(utility)) {
                 totalMaterials = getStorage().values().stream()
                         .filter(material -> material instanceof Materials)
                         .map(Materials.class::cast)
-                        .filter(material -> material.getUtility() == Materials.Utility.valueOf(utility))
+                        .filter(material -> material.getUtility() == Utility.valueOf(utility))
                         .mapToInt(Materials::getAmount)
                         .sum();
             } else {
@@ -166,12 +168,12 @@ public class Storage {
             throw new IllegalArgumentException("Invalid amount input.");
         } else {
             int totalEquipment;
-            List<String> list = Arrays.stream(Equipment.EquipmentType.values()).map(Enum::name).toList();
+            List<String> list = Arrays.stream(EquipmentType.values()).map(Enum::name).toList();
             if (list.contains(equipmentType)) {
                 totalEquipment = getStorage().values().stream()
                         .filter(equipment -> equipment instanceof Equipment)
                         .map(Equipment.class::cast)
-                        .filter(equipment -> equipment.getEquipmentType() == Equipment.EquipmentType.valueOf(equipmentType))
+                        .filter(equipment -> equipment.getEquipmentType() == EquipmentType.valueOf(equipmentType))
                         .mapToInt(Equipment::getAmount)
                         .sum();
             } else {

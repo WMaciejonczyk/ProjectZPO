@@ -59,11 +59,11 @@ public class ReservationRegisterController implements Initializable {
         colDoctorID.setCellValueFactory(new PropertyValueFactory<>("doctorId"));
         colReservationStart.setCellValueFactory(new PropertyValueFactory<>("reservationStart"));
         colReservationEnd.setCellValueFactory(new PropertyValueFactory<>("reservationEnd"));
-        colEquipmentName.setCellValueFactory(new PropertyValueFactory<>("equipmentName"));
+        colEquipmentName.setCellValueFactory(new PropertyValueFactory<>("equipmentType"));
         colEquipmentAmount.setCellValueFactory(new PropertyValueFactory<>("equipmentAmount"));
-        colMaterialName.setCellValueFactory(new PropertyValueFactory<>("materialName"));
+        colMaterialName.setCellValueFactory(new PropertyValueFactory<>("materialType"));
         colMaterialAmount.setCellValueFactory(new PropertyValueFactory<>("materialAmount"));
-        colMedicineName.setCellValueFactory(new PropertyValueFactory<>("medicineName"));
+        colMedicineName.setCellValueFactory(new PropertyValueFactory<>("medicineATC"));
         colMedicineAmount.setCellValueFactory(new PropertyValueFactory<>("medicineAmount"));
         tableView.setItems(MainApp.getResObservableList());
         tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);

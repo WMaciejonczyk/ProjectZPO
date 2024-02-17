@@ -40,13 +40,13 @@ public class ReservationsRegister {
                 String doctorID = "Doctor ID: " + reservation.getDoctorId() + "\n";
                 String reservationStart = "Reservation start: " + reservation.getReservationStart() + "\n";
                 String reservationEnd = "Reservation end: " + reservation.getReservationEnd() + "\n";
-                String equipmentName = "Equipment name: " + reservation.getEquipmentName() + "\n";
+                String equipmentType = "Equipment name: " + reservation.getEquipmentType() + "\n";
                 String equipmentAmount = "Equipment amount: " + reservation.getEquipmentAmount() + "\n";
-                String materialName = "Material name: " + reservation.getMaterialName() + "\n";
+                String materialName = "Material name: " + reservation.getMaterialType() + "\n";
                 String materialAmount = "Material amount: " + reservation.getMaterialAmount() + "\n";
-                String medicineName = "Medicine name: " + reservation.getMedicineName() + "\n";
+                String medicineATC = "Medicine name: " + reservation.getMedicineATC() + "\n";
                 String medicineAmount = "Medicine amount: " + reservation.getMedicineAmount() + "\n";
-                String info = doctorID + reservationStart + reservationEnd + equipmentName + equipmentAmount + materialName + materialAmount + medicineName + medicineAmount;
+                String info = doctorID + reservationStart + reservationEnd + equipmentType + equipmentAmount + materialName + materialAmount + medicineATC + medicineAmount;
                 System.out.println(info);
             }
             else {

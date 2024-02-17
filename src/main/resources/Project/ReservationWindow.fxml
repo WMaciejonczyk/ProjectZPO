@@ -5,6 +5,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import Project.equipment.EquipmentType?>
+<?import Project.material.Utility?>
+
 <Pane fx:controller="Project.ReservationAppController"
       xmlns:fx="http://javafx.com/fxml">
     <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
@@ -22,25 +27,44 @@
 
     <TextField fx:id="textReservationEnd" promptText="Enter reservation end date" layoutX="140" layoutY="108"/>
 
-    <Label text="Material name:" layoutX="53" layoutY="150"/>
+    <Label text="Material type:" layoutX="53" layoutY="150"/>
 
-    <TextField fx:id="textMaterialName" promptText="Enter material name" layoutX="140" layoutY="148"/>
+    <ComboBox fx:id="materialTypeComboBox" layoutX="140" layoutY="148">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <Utility fx:value="HEMORRHAGE_CONTROL"/>
+                <Utility fx:value="STERILIZATION"/>
+                <Utility fx:value="IMMOBILIZATION"/>
+                <Utility fx:value="OTHER"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
 
     <Label text="Material amount:" layoutX="42" layoutY="190"/>
 
     <TextField fx:id="textMaterialAmount" promptText="Enter material amount" layoutX="140" layoutY="188"/>
 
-    <Label text="Equipment name:" layoutX="39" layoutY="230"/>
+    <Label text="Equipment type:" layoutX="39" layoutY="230"/>
 
-    <TextField fx:id="textEquipmentName" promptText="Enter equipment name" layoutX="140" layoutY="228"/>
+    <ComboBox fx:id="equipmentTypeComboBox" layoutX="140" layoutY="228">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <EquipmentType fx:value="EKG"/>
+                <EquipmentType fx:value="RTG"/>
+                <EquipmentType fx:value="USG"/>
+                <EquipmentType fx:value="MRI"/>
+                <EquipmentType fx:value="OTHER"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
 
     <Label text="Equipment amount:" layoutX="27" layoutY="270"/>
 
     <TextField fx:id="textEquipmentAmount" promptText="Enter equipment amount" layoutX="140" layoutY="268"/>
 
-    <Label text="Medicine name:" layoutX="47" layoutY="310"/>
+    <Label text="Medicine ATC:" layoutX="47" layoutY="310"/>
 
-    <TextField fx:id="textMedicineName" promptText="Enter medicine name" layoutX="140" layoutY="308"/>
+    <TextField fx:id="textMedicineATC" promptText="Enter medicine ATC code" layoutX="140" layoutY="308"/>
 
     <Label text="Medicine amount:" layoutX="36" layoutY="350"/>
 

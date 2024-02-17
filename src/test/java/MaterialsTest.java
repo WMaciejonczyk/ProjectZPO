@@ -1,4 +1,5 @@
 import Project.material.Materials;
+import Project.material.Utility;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -23,7 +24,7 @@ public class MaterialsTest {
         assertEquals("Bandages", m.getName());
         assertEquals(10.0, m.getCost());
         assertEquals(5, m.getAmount());
-        assertEquals(Materials.Utility.HEMORRHAGE_CONTROL, m.getUtility());
+        assertEquals(Utility.HEMORRHAGE_CONTROL, m.getUtility());
     }
 
     @Test
@@ -65,7 +66,7 @@ public class MaterialsTest {
         Materials m = new Materials("Bandages", 10.0, 5, LocalDate.now().plusDays(10));
         m.setName("Gauze");
         assertEquals("Gauze", m.getName());
-        assertEquals(Materials.Utility.STERILIZATION, m.getUtility());
+        assertEquals(Utility.STERILIZATION, m.getUtility());
         assertThrows(IllegalArgumentException.class, () -> m.setName(""));
     }
     @Test
@@ -88,28 +89,28 @@ public class MaterialsTest {
     public void testSetUtilityHemorrhageControl() {
         Materials m = new Materials("Bandages", 10.0, 5, LocalDate.now().plusDays(10));
         m.setUtility("Bandages");
-        assertEquals(Materials.Utility.HEMORRHAGE_CONTROL, m.getUtility());
+        assertEquals(Utility.HEMORRHAGE_CONTROL, m.getUtility());
     }
 
     @Test
     public void testSetUtilitySterilization() {
         Materials m = new Materials("Bandages", 10.0, 5, LocalDate.now().plusDays(10));
         m.setUtility("Gauze");
-        assertEquals(Materials.Utility.STERILIZATION, m.getUtility());
+        assertEquals(Utility.STERILIZATION, m.getUtility());
     }
 
     @Test
     public void testSetUtilityImmobilization() {
         Materials m = new Materials("Bandages", 10.0, 5, LocalDate.now().plusDays(10));
         m.setUtility("Plaster");
-        assertEquals(Materials.Utility.IMMOBILIZATION, m.getUtility());
+        assertEquals(Utility.IMMOBILIZATION, m.getUtility());
     }
 
     @Test
     public void testSetUtilityOther() {
         Materials m = new Materials("Bandages", 10.0, 5, LocalDate.now().plusDays(10));
         m.setUtility("First aid kit");
-        assertEquals(Materials.Utility.OTHER, m.getUtility());
+        assertEquals(Utility.OTHER, m.getUtility());
     }
 
     @Test

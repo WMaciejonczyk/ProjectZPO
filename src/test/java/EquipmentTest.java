@@ -1,4 +1,5 @@
 import Project.equipment.Equipment;
+import Project.equipment.EquipmentType;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -24,7 +25,7 @@ public class EquipmentTest {
         assertEquals("EKG", equipment.getName());
         assertEquals(10000.0, equipment.getCost());
         assertEquals(1, equipment.getAmount());
-        assertEquals(Equipment.EquipmentType.EKG, equipment.getEquipmentType());
+        assertEquals(EquipmentType.EKG, equipment.getEquipmentType());
         assertEquals(Equipment.Mobility.MOVABLE, equipment.getMobility());
     }
 
@@ -68,7 +69,7 @@ public class EquipmentTest {
         Equipment equipment = new Equipment("EKG", 10000.0, 1, LocalDate.now());
         equipment.setName("RTG");
         assertEquals("RTG", equipment.getName());
-        assertEquals(Equipment.EquipmentType.RTG, equipment.getEquipmentType());
+        assertEquals(EquipmentType.RTG, equipment.getEquipmentType());
         assertThrows(IllegalArgumentException.class, () -> equipment.setName(""));
     }
 

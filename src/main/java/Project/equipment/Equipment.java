@@ -10,17 +10,6 @@ import java.time.LocalDate;
 public class Equipment implements Supply {
 
     /**
-     * Enumeration representing different types of equipment.
-     */
-    public enum EquipmentType {
-        EKG,
-        RTG,
-        USG,
-        MRI,
-        OTHER
-    }
-
-    /**
      * Enumeration representing the mobility of equipment.
      */
     public enum Mobility {

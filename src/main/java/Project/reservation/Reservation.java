@@ -2,28 +2,31 @@ package Project.reservation;
 
 import java.time.LocalDate;
 
+import Project.equipment.EquipmentType;
+import Project.material.Utility;
+
 public class Reservation {
     private String doctorId;
     private LocalDate reservationStart;
     private LocalDate reservationEnd;
-    private String equipmentName;
+    private EquipmentType equipmentType;
     private int equipmentAmount;
-    private String materialName;
+    private Utility materialType;
     private int materialAmount;
-    private String medicineName;
+    private String medicineATC;
     private int medicineAmount;
 
     public Reservation(String doctorId, LocalDate reservationStart, LocalDate reservationEnd,
-                       String equipmentName, int equipmentAmount, String materialName,
-                       int materialAmount, String medicineName, int medicineAmount) {
+                       EquipmentType equipmentType, int equipmentAmount, Utility materialType,
+                       int materialAmount, String medicineATC, int medicineAmount) {
         this.doctorId = doctorId;
         this.reservationStart = reservationStart;
         this.reservationEnd = reservationEnd;
-        this.equipmentName = equipmentName;
+        this.equipmentType = equipmentType;
         this.equipmentAmount = equipmentAmount;
-        this.materialName = materialName;
+        this.materialType = materialType;
         this.materialAmount = materialAmount;
-        this.medicineName = medicineName;
+        this.medicineATC = medicineATC;
         this.medicineAmount = medicineAmount;
     }
 
@@ -51,12 +54,12 @@ public class Reservation {
         this.reservationEnd = reservationEnd;
     }
 
-    public String getEquipmentName() {
-        return equipmentName;
+    public String getEquipmentType() {
+        return equipmentType.toString();
     }
 
-    public void setEquipmentName(String equipmentName) {
-        this.equipmentName = equipmentName;
+    public void setEquipmentType(EquipmentType equipmentType) {
+        this.equipmentType = equipmentType;
     }
 
     public int getEquipmentAmount() {
@@ -67,12 +70,12 @@ public class Reservation {
         this.equipmentAmount = equipmentAmount;
     }
 
-    public String getMaterialName() {
-        return materialName;
+    public String getMaterialType() {
+        return materialType.toString();
     }
 
-    public void setMaterialName(String materialName) {
-        this.materialName = materialName;
+    public void setmaterialType(Utility materialType) {
+        this.materialType = materialType;
     }
 
     public int getMaterialAmount() {
@@ -83,12 +86,12 @@ public class Reservation {
         this.materialAmount = materialAmount;
     }
 
-    public String getMedicineName() {
-        return medicineName;
+    public String getMedicineATC() {
+        return medicineATC;
     }
 
-    public void setMedicineName(String medicineName) {
-        this.medicineName = medicineName;
+    public void setMedicineATC(String medicineATC) {
+        this.medicineATC = medicineATC;
     }
 
     public int getMedicineAmount() {
