@@ -1,13 +1,6 @@
 package Project.doctor;
 
 public class Doctor {
-    public enum Speciality {
-        CARDIOLOGY,
-        ORTHOPEDICS,
-        ENDOCRINOLOGY,
-        NEUROLOGY,
-        OTHER
-    }
     private String name;
     private String surname;
     private Speciality speciality;

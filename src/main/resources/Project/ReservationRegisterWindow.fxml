@@ -7,18 +7,18 @@
 <Pane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ReservationRegisterController">
     <padding><Insets bottom="15" left="25" right="25" top="15" /></padding>
 
-    <Button fx:id="exitReservationRegister" layoutX="205.0" layoutY="419.0" onAction="#exitReservationRegister" text="Exit" />
+    <Button fx:id="exitReservationRegister" layoutX="390" layoutY="419.0" onAction="#exitReservationRegister" text="Exit" />
     <TableView fx:id="tableView" layoutX="26.0" layoutY="14.0">
         <columns>
             <TableColumn fx:id="colDoctorID" maxWidth="100.0" text="Doctor ID" />
-            <TableColumn fx:id="colReservationStart" maxWidth="80.0" text="Reservation Start" />
-            <TableColumn fx:id="colReservationEnd" maxWidth="80.0" text="Reservation End" />
-            <TableColumn fx:id="colEquipmentName" maxWidth="120.0" text="Equipment Name" />
-            <TableColumn fx:id="colEquipmentAmount" maxWidth="80.0" text="Equipment Amount" />
-            <TableColumn fx:id="colMaterialName" maxWidth="120.0" text="Material Name" />
-            <TableColumn fx:id="colMaterialAmount" maxWidth="80.0" text="Material Amount" />
-            <TableColumn fx:id="colMedicineName" maxWidth="120.0" text="Medicine Name" />
-            <TableColumn fx:id="colMedicineAmount" maxWidth="80.0" text="Medicine Amount" />
+            <TableColumn fx:id="colReservationStart" text="Reservation Start" />
+            <TableColumn fx:id="colReservationEnd" text="Reservation End" />
+            <TableColumn fx:id="colEquipmentName" text="Equipment Name" />
+            <TableColumn fx:id="colEquipmentAmount"  text="Equipment Amount" />
+            <TableColumn fx:id="colMaterialName"  text="Material Name" />
+            <TableColumn fx:id="colMaterialAmount" text="Material Amount" />
+            <TableColumn fx:id="colMedicineName" text="Medicine Name" />
+            <TableColumn fx:id="colMedicineAmount" text="Medicine Amount" />
         </columns>
     </TableView>
 </Pane>

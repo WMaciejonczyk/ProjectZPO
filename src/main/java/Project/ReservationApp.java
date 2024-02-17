@@ -25,7 +25,7 @@ public class ReservationApp extends Application {
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("ReservationWindow.fxml"));
         Parent root = loader.load();
 
-        Scene scene = new Scene(root, 300, 350);
+        Scene scene = new Scene(root, 300, 450);
         stage.setTitle("Reservation Menu");
         stage.setScene(scene);
         stage.show();

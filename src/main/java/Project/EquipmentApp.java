@@ -30,7 +30,7 @@ public class EquipmentApp extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("Project/EquipmentWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("EquipmentWindow.fxml"));
         Parent root = loader.load();
 
         Scene scene = new Scene(root, 280, 250);

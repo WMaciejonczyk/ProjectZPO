@@ -49,7 +49,7 @@ public class DoctorsRegisterController implements Initializable {
         colName.setCellValueFactory(new PropertyValueFactory<>("name"));
         colSurname.setCellValueFactory(new PropertyValueFactory<>("surname"));
         colSpeciality.setCellValueFactory(new PropertyValueFactory<>("speciality"));
-        colPhoneNumber.setCellValueFactory(new PropertyValueFactory<>("phone number"));
+        colPhoneNumber.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
         colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
         tableView.setItems(MainApp.getDocObservableList());
         tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);

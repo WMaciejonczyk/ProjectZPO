@@ -5,20 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="725b986c-e3c2-4b6f-bfa9-fb80e4f3abfc" name="Changes" comment="Updating project - adding/updating supplies">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Project/ReservationRegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Project/ReservationRegisterWindow.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/ReservationsRegister/ReservationsRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/doctor/Speciality.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/AddDoctorApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/AddDoctorApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Project/AddDoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/AddDoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Project/DeleteDoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/DeleteDoctorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegister/DoctorsRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegister/DoctorsRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/EquipmentApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/EquipmentApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Project/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/ReservationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/ReservationApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Project/ReservationAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/ReservationAppController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Project/ReservationRegisterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/ReservationRegisterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/ReservationRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/ReservationRegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Project/doctor/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/doctor/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/reservation/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/reservation/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Project/AddDoctorWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/AddDoctorWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/DoctorsRegisterWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/DoctorsRegisterWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/MainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/ReservationRegisterWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/ReservationRegisterWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/ReservationWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/ReservationWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +40,7 @@
       <list>
         <option value="Interface" />
         <option value="FxmlFile" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -72,6 +80,8 @@
     "Application.MainApp.executor": "Run",
     "Application.MaterialApp.executor": "Run",
     "Application.MedicineApp.executor": "Run",
+    "Application.ReservationApp.executor": "Run",
+    "Application.ReservationRegisterApp.executor": "Run",
     "Application.StorageApp.executor": "Run",
     "Application.SupplyDeletionApp.executor": "Run",
     "Application.SupplyUpdateApp.executor": "Run",
@@ -113,10 +123,23 @@
       <recent name="com.example.projectzpo" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-20.0.2-corretto-20.0.2.1-f644763e9732-27d99999" />
+        <option value="jdk-20.0.2-corretto-20.0.2.1-3183f394aec4-907a2361" />
       </set>
     </attachedChunks>
   </component>
@@ -142,6 +165,7 @@
       <workItem from="1707887284138" duration="11628000" />
       <workItem from="1708019484079" duration="35123000" />
       <workItem from="1708170148678" duration="11869000" />
+      <workItem from="1708200444831" duration="6020000" />
     </task>
     <task id="LOCAL-00001" summary="Updating project - storage">
       <option name="closed" value="true" />

@@ -9,7 +9,7 @@
       xmlns:fx="http://javafx.com/fxml">
     <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
 
-    <Label text="Materials and Equipment:" layoutX="45" layoutY="20"/>
+    <Label text="Medical Supplies:" layoutX="45" layoutY="20"/>
 
     <Button fx:id="showAddMaterialMenu" text="Add material" layoutX="45" layoutY="60"
                   onAction="#handleShowFieldsMaterials"/>
@@ -38,14 +38,14 @@
     <Button fx:id="DeleteDoctorMenu" text="Delete doctor" layoutX="160" layoutY="250"
             onAction="#handleShowDeleteDoctorMenu"/>
 
-    <Button fx:id="showDoctors" text="Show Doctors" layoutX="45" layoutY="300"
+    <Button fx:id="showDoctors" text="Show doctors" layoutX="45" layoutY="300"
             onAction="#handleShowDoctorsRegister"/>
 
     <Button fx:id="showReservationMenu" text="Make a reservation" layoutX="160" layoutY="300"
             onAction="#handleShowReservationMenu"/>
 
-    <Button fx:id="deleteReservationMenu" text="Delete a reservation" layoutX="45" layoutY="350"
-            onAction="#handleDeleteReservation"/>
+<!--    <Button fx:id="deleteReservationMenu" text="Delete a reservation" layoutX="45" layoutY="350"-->
+<!--            onAction="#handleDeleteReservation"/>-->
 
     <Button fx:id="showReservations" text="Show reservations" layoutX="160" layoutY="350"
             onAction="#handleShowReservations"/>

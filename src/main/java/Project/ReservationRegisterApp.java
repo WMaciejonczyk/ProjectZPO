@@ -21,9 +21,9 @@ public class ReservationRegisterApp extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("ReservationRegisterWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("ReservationRegisterWindow.fxml"));
         Parent root = loader.load();
-        Scene scene = new Scene(root, 450, 450);
+        Scene scene = new Scene(root, 1000, 450);
         stage.setTitle("Reservation Register Contents");
         stage.setScene(scene);
         stage.show();
