@@ -1,5 +1,6 @@
-package Project;
+package Project.ReservationsRegister;
 
+import Project.MainApp;
 import Project.doctor.Doctor;
 import Project.reservation.Reservation;
 import javafx.fxml.FXML;

@@ -1,5 +1,6 @@
-package Project;
+package Project.reservation;
 
+import Project.MainApp;
 import Project.exceptions.InvalidInputException;
 import Project.material.Utility;
 import javafx.event.ActionEvent;
@@ -16,7 +17,7 @@ import Project.doctor.Doctor;
 import Project.equipment.EquipmentType;
 
 /**
- * The ReservationAppController class controls the interaction with the doctor addition window.
+ * The ReservationAppController class controls the interaction with the reservation window.
  */
 public class ReservationAppController {
 

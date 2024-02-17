@@ -1,5 +1,6 @@
-package Project;
+package Project.apps;
 
+import Project.MainApp;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -21,7 +22,7 @@ public class MedicineApp extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("MedicineWindow.fxml"));
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("MedicineWindow.fxml"));
         Parent root = loader.load();
 
         Scene scene = new Scene(root, 330, 300);

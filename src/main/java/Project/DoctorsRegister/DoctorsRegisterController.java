@@ -1,5 +1,6 @@
-package Project;
+package Project.DoctorsRegister;
 
+import Project.MainApp;
 import Project.doctor.Doctor;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
