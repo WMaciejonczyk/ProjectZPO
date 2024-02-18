@@ -1,6 +1,8 @@
 package Project.storage;
 
 import Project.MainApp;
+import Project.ReservationsRegister.ReservationExporter;
+import Project.reservation.Reservation;
 import Project.supply.Supply;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -12,6 +14,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -33,6 +36,9 @@ public class StorageController implements Initializable {
 
     @FXML
     private TableColumn<Supply, LocalDate> colDate;
+
+    @FXML
+    private Button exportStorageButton;
 
     @FXML
     private Button exitStorageButton;
@@ -61,6 +67,21 @@ public class StorageController implements Initializable {
     @FXML
     protected void exitStorage() throws IOException {
         Stage stage = (Stage) exitStorageButton.getScene().getWindow();
+        stage.close();
+        openMainApp(stage);
+    }
+
+    /**
+     * Exports the storage to a JSON file.
+     *
+     * @throws IOException if an I/O exception occurs.
+     */
+    @FXML
+    protected void exportStorageButton() throws IOException {
+        List<Supply> supplieslist = MainApp.getTvObservableList();
+        String exportDirectory = "storage.json"; // Specify your export directory
+        StorageExporter.exportStorageToJson(supplieslist, exportDirectory);
+        Stage stage = (Stage) exportStorageButton.getScene().getWindow();
         stage.close();
         openMainApp(stage);
     }

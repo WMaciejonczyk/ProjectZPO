@@ -136,7 +136,7 @@ public class Storage {
      * @throws IllegalArgumentException if the amount is invalid or the utility is incorrect.
      */
     public boolean isEnoughCertainMaterials(String utility, int amount) {
-        if (amount <= 0) {
+        if (amount < 0) {
             throw new IllegalArgumentException("Invalid amount input.");
         } else {
             int totalMaterials;
@@ -164,7 +164,7 @@ public class Storage {
      * @throws IllegalArgumentException if the amount is invalid or the equipment type is incorrect.
      */
     public boolean isEnoughCertainEquipment(String equipmentType, int amount) {
-        if (amount <= 0) {
+        if (amount < 0) {
             throw new IllegalArgumentException("Invalid amount input.");
         } else {
             int totalEquipment;
@@ -192,7 +192,7 @@ public class Storage {
      * @throws IllegalArgumentException if the amount is invalid or the medicine group is incorrect.
      */
     public boolean isEnoughCertainMedicine(String medicineGroup, int amount) {
-        if (amount <= 0) {
+        if (amount < 0) {
             throw new IllegalArgumentException("Invalid amount input.");
         } else if (medicineGroup.length() != 1) {
             throw new IllegalArgumentException("Invalid medicine group length input.");

@@ -1,7 +1,7 @@
 module Project {
     requires javafx.controls;
     requires javafx.fxml;
-
+    requires com.google.gson;
 
     exports Project;
     opens Project to javafx.fxml;
@@ -27,4 +27,7 @@ module Project {
     opens Project.reservation to javafx.fxml;
     exports Project.apps;
     opens Project.apps to javafx.fxml;
+    exports Project.adapters;
+    opens Project.adapters to javafx.fxml;
+
 }

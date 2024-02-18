@@ -18,12 +18,12 @@ public class Equipment implements Supply {
         UNDETERMINED
     }
 
-    private String name;
-    private double cost;
-    private int amount;
-    private LocalDate serviceDate;
-    private EquipmentType equipmentType;
-    private Mobility mobility;
+    public String name;
+    public double cost;
+    public int amount;
+    public LocalDate serviceDate;
+    public EquipmentType equipmentType;
+    public Mobility mobility;
 
     /**
      * Constructs an Equipment object with specified parameters.

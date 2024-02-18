@@ -89,10 +89,20 @@ public class MainApp extends Application {
      */
     public static DoctorsRegister getDoctorsRegister() {return doctorsRegister;}
 
+    /**
+     * Gets the ReservationsRegister instance.
+     *
+     * @return The ReservationsRegister instance.
+     */
     public static ReservationsRegister getReservationsRegister() {
         return reservationsRegister;
     }
 
+    /**
+     * Gets the ObservableList of reservations.
+     *
+     * @return The ObservableList of reservations.
+     */
     public static ObservableList<Reservation> getResObservableList() {
         return resObservableList;
     }

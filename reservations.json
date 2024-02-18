@@ -1,0 +1,11 @@
+{
+  "doctorId": "1",
+  "reservationStart": "2024-12-12",
+  "reservationEnd": "2024-12-12",
+  "equipmentType": "EKG",
+  "equipmentAmount": 0,
+  "materialType": "HEMORRHAGE_CONTROL",
+  "materialAmount": 0,
+  "medicineATC": "A",
+  "medicineAmount": 0
+}

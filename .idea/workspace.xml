@@ -5,30 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="725b986c-e3c2-4b6f-bfa9-fb80e4f3abfc" name="Changes" comment="Update v2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/ReservationsRegister/ReservationExporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/adapters/LocalDateAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Project/storage/StorageExporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DoctorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ReservationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/AddDoctorApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/apps/AddDoctorApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/AddDoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/doctor/AddDoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/DeleteDoctorApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/apps/DeleteDoctorApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/DeleteDoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/doctor/DeleteDoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/DeleteReservationApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegisterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/apps/DoctorsRegisterApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegister/DoctorsRegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/EquipmentApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/apps/EquipmentApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegister/DoctorsRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegister/DoctorsRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegister/DoctorsRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/DoctorsRegister/DoctorsRegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/MainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Project/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/MaterialApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/apps/MaterialApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/MedicineApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/apps/MedicineApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/ReservationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/apps/ReservationApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/ReservationAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/reservation/ReservationAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/ReservationRegisterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/apps/ReservationRegisterApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/ReservationRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/ReservationsRegister/ReservationRegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Project/StorageApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/apps/StorageApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/ReservationsRegister/ReservationRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/ReservationsRegister/ReservationRegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/ReservationsRegister/ReservationsRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/ReservationsRegister/ReservationsRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/doctor/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/doctor/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/doctor/Speciality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/doctor/Speciality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/equipment/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/equipment/Equipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/material/Materials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/material/Materials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/medicine/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/medicine/Medicine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/reservation/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/reservation/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/reservation/ReservationAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/reservation/ReservationAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/storage/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/storage/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Project/storage/StorageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Project/storage/StorageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Project/AddDoctorWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/AddDoctorWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/DoctorDeletionWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/DoctorDeletionWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/DoctorsRegisterWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/DoctorsRegisterWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/MedicineWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/MedicineWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Project/ReservationRegisterWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/ReservationRegisterWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Project/ReservationWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/ReservationWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Project/StorageWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Project/StorageWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +46,8 @@
       <list>
         <option value="Interface" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,7 +104,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "mateusz",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Mateusz/Uczelnia/PWR/Zaawansowane Programowanie Obiektowe/ProjectZPO",
     "node.js.detected.package.eslint": "true",
@@ -112,7 +115,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

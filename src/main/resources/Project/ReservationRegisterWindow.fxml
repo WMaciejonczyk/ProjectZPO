@@ -8,6 +8,7 @@
     <padding><Insets bottom="15" left="25" right="25" top="15" /></padding>
 
     <Button fx:id="exitReservationRegister" layoutX="390" layoutY="419.0" onAction="#exitReservationRegister" text="Exit" />
+    <Button fx:id="exportReservationsToJSON" layoutX="430" layoutY="419.0" onAction="#exportReservationsToJSON" text="Export to JSON" />
     <TableView fx:id="tableView" layoutX="26.0" layoutY="14.0">
         <columns>
             <TableColumn fx:id="colDoctorID" maxWidth="100.0" text="Doctor ID" />

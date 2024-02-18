@@ -8,11 +8,11 @@ import java.time.LocalDate;
  * This class represents materials used for medical supplies. It implements the Supply interface.
  */
 public class Materials implements Supply {
-    private String name;
-    private double cost;
-    private int amount;
-    private LocalDate expirationDate;
-    private Utility utility;
+    public String name;
+    public double cost;
+    public int amount;
+    public LocalDate expirationDate;
+    public Utility utility;
 
     /**
      * Constructs a Materials object with specified parameters.

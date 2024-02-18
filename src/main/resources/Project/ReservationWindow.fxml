@@ -13,11 +13,11 @@
 <Pane fx:controller="Project.reservation.ReservationAppController"
       xmlns:fx="http://javafx.com/fxml">
     <padding><Insets top="15" right="25" bottom="15" left="25"/></padding>
+    <Label text="Remeber to put the dates in a YYYY-MM-DD format!" layoutX="5" layoutY="10"/>
 
+    <Label text="Doctor ID:" layoutX="77" layoutY="35"/>
 
-    <Label text="Doctor ID:" layoutX="77" layoutY="30"/>
-
-    <TextField fx:id="textDoctorID" promptText="Enter doctors id" layoutX="140" layoutY="28"/>
+    <TextField fx:id="textDoctorID" promptText="Enter doctors id" layoutX="140" layoutY="33"/>
 
     <Label text="Reservation start date:" layoutX="12" layoutY="70"/>
 
@@ -62,9 +62,9 @@
 
     <TextField fx:id="textEquipmentAmount" promptText="Enter equipment amount" layoutX="140" layoutY="268"/>
 
-    <Label text="Medicine ATC:" layoutX="47" layoutY="310"/>
+    <Label text="Medicine group (A,B,C...):" layoutX="2" layoutY="310"/>
 
-    <TextField fx:id="textMedicineATC" promptText="Enter medicine ATC code" layoutX="140" layoutY="308"/>
+    <TextField fx:id="textMedicineATC" promptText="Enter medicine ATC group" layoutX="140" layoutY="308"/>
 
     <Label text="Medicine amount:" layoutX="36" layoutY="350"/>
 

@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 /**
- * The StorageController class controls the interaction with the storage window.
+ * The DoctorsRegisterControlle class controls the interaction with the doctors register window.
  */
 public class DoctorsRegisterController implements Initializable {
 
@@ -40,7 +40,7 @@ public class DoctorsRegisterController implements Initializable {
     private Button exitDoctorsRegisterButton;
 
     /**
-     * Initializes the storage controller.
+     * Initializes the doctors register controller.
      *
      * @param arg0 The URL of the FXML file.
      * @param arg1 The ResourceBundle for internationalization.
@@ -57,7 +57,7 @@ public class DoctorsRegisterController implements Initializable {
     }
 
     /**
-     * Exits the storage window and opens the main application.
+     * Exits the doctors register window and opens the main application.
      *
      * @throws IOException if an I/O exception occurs.
      */

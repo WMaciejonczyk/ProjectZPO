@@ -12,6 +12,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class ReservationRegisterController implements Initializable {
@@ -45,6 +46,9 @@ public class ReservationRegisterController implements Initializable {
 
     @FXML
     private TableColumn<Reservation, String> colMedicineAmount;
+
+    @FXML
+    private Button exportReservationsToJSON;
 
     @FXML
     private Button exitReservationRegister;
@@ -83,6 +87,19 @@ public class ReservationRegisterController implements Initializable {
     }
 
     /**
+     * Export reservations from the reservation register to JSON files.
+     */
+    @FXML
+    protected void exportReservationsToJSON() throws IOException {
+        List<Reservation> reservations = MainApp.getResObservableList();
+        String exportDirectory = "reservations.json"; // Specify your export directory
+        ReservationExporter.exportReservationsToJson(reservations, exportDirectory);
+        Stage stage = (Stage) exportReservationsToJSON.getScene().getWindow();
+        stage.close();
+        openMainApp(stage);
+    }
+
+    /**
      * Opens the main application.
      *
      * @param stage The stage of the storage window.
@@ -92,4 +109,5 @@ public class ReservationRegisterController implements Initializable {
         MainApp mainApp = new MainApp();
         mainApp.start(stage);
     }
+
 }

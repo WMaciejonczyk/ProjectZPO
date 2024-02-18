@@ -9,11 +9,11 @@ import java.util.Arrays;
  * This class represents medicines used as part of medical supplies. It implements the Supply interface.
  */
 public class Medicine implements Supply {
-    private String name;
-    private String classificationATC;
-    private double cost;
-    private int amount;
-    private LocalDate expirationDate;
+    public String name;
+    public String classificationATC;
+    public double cost;
+    public int amount;
+    public LocalDate expirationDate;
 
     /**
      * Constructs a Medicine object with specified parameters.

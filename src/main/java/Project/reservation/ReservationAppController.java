@@ -116,13 +116,26 @@ public class ReservationAppController {
         mainApp.start(stage);
     }
 
-
+    /**
+     * Checks if a reservation is valid based on the availability of equipment, material, and medicine.
+     *
+     * @param doctorId        The ID of the doctor making the reservation.
+     * @param reservationStart The start date of the reservation.
+     * @param reservationEnd   The end date of the reservation.
+     * @param equipmentType    The type of equipment being reserved.
+     * @param equipmentAmount  The amount of equipment being reserved.
+     * @param materialType     The type of material being reserved.
+     * @param materialAmount   The amount of material being reserved.
+     * @param medicineATC      The ATC code of the medicine being reserved.
+     * @param medicineAmount   The amount of medicine being reserved.
+     * @return True if the reservation is valid, false otherwise.
+     */
     public boolean checkReservation(String doctorId, LocalDate reservationStart, LocalDate reservationEnd,
                                     EquipmentType equipmentType, int equipmentAmount,
                                     Utility materialType, int materialAmount,
                                     String medicineATC, int medicineAmount) {
 
-        if (equipmentAmount <= 0 || materialAmount <= 0 || medicineAmount <= 0) {
+        if (equipmentAmount < 0 || materialAmount < 0 || medicineAmount < 0) {
             return false;
         }
         if (reservationStart.isAfter(reservationEnd)) {
@@ -134,7 +147,17 @@ public class ReservationAppController {
         }
         return false;
     }
-
+    /**
+     * Checks the availability of equipment, material, and medicine in storage.
+     *
+     * @param equipmentType    The type of equipment being reserved.
+     * @param equipmentAmount  The amount of equipment being reserved.
+     * @param materialType     The type of material being reserved.
+     * @param materialAmount   The amount of material being reserved.
+     * @param medicineATC      The ATC code of the medicine being reserved.
+     * @param medicineAmount   The amount of medicine being reserved.
+     * @return True if there is enough availability in storage, false otherwise.
+     */
     private boolean checkStorageAvailability(EquipmentType equipmentType, int equipmentAmount,
                                              Utility materialType, int materialAmount,
                                              String medicineATC, int medicineAmount) {
