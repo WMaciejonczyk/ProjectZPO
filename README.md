@@ -1,12 +1,12 @@
 # Medical Supplies Management System - JavaFX Application
 ## Main Menu
-- **MainController.java** - class managing the user interaction with the main menu of the application. It provides methods to handle button clicks for different functionalities, such as adding materials, equipment, or medicine, displaying storage contents, deleting supplies, and updating supplies.
-- **MainApp.java** - class representing the main application of the project. It initializes the user interface, manages the observable list of supplies, and provides access to the storage instance for managing supplies and resources effectively.
+- **MainController.java** - class managing the user interaction with the main menu of the application. It provides methods to handle button clicks for different functionalities, such as adding materials, equipment, or medicine, displaying storage contents, deleting supplies, updating supplies, adding and deleting doctors, adding reservations, displaying both doctors' register and reservations' register.
+- **MainApp.java** - class representing the main application of the project. It initializes the user interface, manages the observable list of supplies, doctors and reservations, provides access to the storage instance for managing supplies and also giving user an access to both doctors' register and reservations' register for managing personnel and their corresponding planned operations dependant on the proper use of resources from storage.
 ### Storage Module
 #### General Interfaces, Custom Exceptions, Adapters
 - **Supply.java** - interface representing a medical supply item. It includes methods for getting and setting the name, cost, amount, and date associated with a supply. It also includes methods for displaying information about a supply and checking if a supply is overdue.
 - **InvalidInputException.java** - exception which is thrown while facing problems related to empty textfields in the application.
-- **LocalDateAdapter.java** - class representing a Gson adapter for serializing and deserializing LocalDate objects.
+- **LocalDateAdapter.java** - class representing a JSON adapter for serializing and deserializing LocalDate objects.
 #### Adding Supplies
 ##### Materials
 - **Materials.java** - class using Supply interface and managing various aspects of medical materials used in healthcare settings. It encapsulates information such as the name, cost, amount, expiration date and utility of the materials.
